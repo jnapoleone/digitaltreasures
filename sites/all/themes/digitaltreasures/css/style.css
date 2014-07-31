@@ -5,6 +5,9 @@
     Description:
         Purpose of the stylesheet follows.
 */
+*,*:before,*:after {
+    box-sizing: border-box;
+}
 
 root { 
     display: block;
