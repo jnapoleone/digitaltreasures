@@ -563,6 +563,10 @@ table.dvd-slideshow-video-storybook,
     height: auto;
 }
 
+.region-footer {
+    overflow: hidden;
+}
+
 .node-type-article #content img {
     border: 1px solid #cccccc;
     background-color: #eeeeee;

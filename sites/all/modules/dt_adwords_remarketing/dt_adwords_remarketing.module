@@ -1,6 +1,6 @@
 <?php
 function dt_adwords_remarketing_page_build( &$page ) {
-    $page['page_bottom']['adwords_remarketing_code'] = array(
+    $page['footer']['adwords_remarketing_code'] = array(
         '#type' => 'markup',
         '#markup' => '
 
