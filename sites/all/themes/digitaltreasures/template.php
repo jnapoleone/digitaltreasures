@@ -158,32 +158,15 @@ function digitaltreasures_preprocess_html(&$variables, $hook) {
 /* -- Delete this line if you want to use this function
 // */
 function digitaltreasures_preprocess_page(&$variables, $hook) {
-  //$variables['sample_variable'] = t('Lorem ipsum.');
-    
-//    if(isset($variables['node']) && $variables['node']->type == 'page'){
-//        if(!is_array($variables['theme_hook_suggestions'])){
-//            $variables['theme_hook_suggestions'] = array();
-//        }
-//
-//        $variables['theme_hook_suggestions'][] = 'page__'.$variables['node']->type;
-//    }
-
-    // Create a renderable Array for field_featured_image if it is set.
-//    if(isset($variables['node']->field_featured_image) && !empty($variables['node']->field_featured_image)) {
-////        $variables['featured_image'] = field_view_field('node', $variables['node'], 'field_featured_image',array(
-////            'label' => 'hidden',
-////        ));
-//        $featured_image = field_view_field('node', $variables['node'], 'field_featured_image',array(
-//            'label' => 'hidden',
-//        ));
-//        $variables['page']['content_header']['featured_image'] = $featured_image;
-////        if(isset($variables['page']['content_header']['block_5'])) {
-////            $featured_image['#weight'] = 200;
-////        }
-////        array_unshift($variables['page']['content_header'], $featured_image);
-////        dpm( $variables);
-////        dpm($variables['featured_image']);
-//    }
+//    drupal_add_js('
+//    /* <![CDATA[ */
+//    var google_conversion_id = 997973119;
+//    var google_custom_params = window.google_tag_params;
+//    var google_remarketing_only = true;
+//    /* ]]> */
+//    ', array( 'type' => 'inline', 'scope' => 'footer', 'every_page' => TRUE)
+//    );
+//    drupal_add_js('www.googleadservices.com/pagead/conversion.js', array('type' => 'external', 'scope' => 'footer'));
 }
 
 /**

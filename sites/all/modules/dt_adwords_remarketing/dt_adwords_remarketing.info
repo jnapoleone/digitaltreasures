@@ -1,0 +1,4 @@
+name = Digital Treasures Adwords Remarketing
+description = A temporary solution for injecting Google Adwords Remarketing code to the bottom of the page, until the Drupal module Google Adwords Remarketing is ready for Drupal 7
+core = 7.x
+package = Digital Treasures
