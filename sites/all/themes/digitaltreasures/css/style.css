@@ -1,4 +1,4 @@
-/* 
+/*
     Document   : style.css
     Created on : Mar 26, 2013, 2:37:39 PM
     Author     : jnapoleone
@@ -9,27 +9,33 @@
     box-sizing: border-box;
 }
 
-root { 
+root {
     display: block;
 }
 
 html {
-    font-size: 14px;
+    /* font-size: 87.5%; */
 }
 
 html,body {
     height: 100%;
 }
 
-html, button, input, select, textara {
-    color: #8F8880;
-/*    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;    */
-    font-family: Palatino, "Palatino Linotype", "Hoefler Text", Times, "Times New Roman", serif;
+body {
+  margin: 0;
+  background-color: #8F8880;
+  font-size: 87.5%
 }
 
-body {
-    background-color: #8F8880;
-    margin: 0;
+body,
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+
+  /* color: #8F8880; */
+  color: #333333;
 }
 
 table {
@@ -56,6 +62,46 @@ table + p:last-child {
     display: none;
 }
 
+q { quotes: initial; }
+
+q:before { content: open-quote; }
+
+q:after { content: close-quote; }
+
+.logo-image {
+  width: 126px;
+  height: auto;
+}
+
+.hours-of-operation-table {
+  width: 40%;
+  border: none;
+  border-collapse: collapse;
+}
+
+.hours-of-operation-table td {
+  border: none;
+}
+
+.hours-of-operation-table td:first-of-type {
+  width: 40%;
+  border: none;
+}
+
+.hours-of-operation-table td:last-of-type {
+  width: 60%;
+  border: none;
+}
+
+.hours-of-operation-table td p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hours-of-operation-table td:first-of-type p {
+  margin-left: 0;
+}
+
 #page {
     min-height: 100%;
 }
@@ -64,20 +110,24 @@ table + p:last-child {
     display: none;
 }
 
-.logo h1 {
-    text-align: center;
-    overflow: hidden;
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*margin-top: 1.5em;*/
 }
 
-#logo {
-    float: none;
+.logo-image {
+	margin-right: 1em;
 }
 
-#logo img {
-    display: block;
-    /*width: 450px;*/
-    /*height: auto;*/
-    margin: 0 auto;
+#logo:hover {
+  background-color: transparent;
+}
+
+.site-name {
+  font-size: 4em;
+  color:#c32b62;
 }
 
 /*Navigation*/
@@ -150,12 +200,19 @@ table + p:last-child {
 /*Fonts*/
 
 .pink,
-.pink a:link {
+.pink a:link,
+.pink a:visited,
+.pink a:hover,
+.pink a:active {
     color: #c32b62;
 }
 
+.pink a:hover {
+  background: transparent;
+}
+
 .call-email {
-    font-size: 15px;
+    /* font-size: 15px; */
 }
 
 .call-email a:hover {
@@ -175,31 +232,41 @@ table + p:last-child {
     /*margin-left: 21px;*/
 }
 
+h1,
+h2,
+h3,
+h4 {
+  color: #3d51a3;
+}
+
 #content h1 {
     font-size: 2em;
-    color: #986F1D;
+    /*color: #986F1D;*/
     margin: 8px 0;
 }
 
-#content h2,
-.sidebars h2 {
-    color: #986F1D;
+/*#content h2,
+.sidebars h2 {*/
+h2 {
+    /*color: #986F1D;*/
     font-size: 1.3em;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin: 10px 0;
 }
 
-#content h3 {
-    color: #986F1D;
+/*#content h3 {*/
+h3 {
+    /*color: #986F1D;*/
     font-size: 1.1em;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin: 12px 0;
 }
 
-#content h4 {
-    color: #986F1D;
+/*#content h4 {*/
+h4 {
+    /*color: #986F1D;*/
     font-size: 1em;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin: 16px 0;
 }
 
@@ -209,15 +276,15 @@ table + p:last-child {
     font-weight: bold;
 }
 
-a,
+/* a,
 a:active,
 a:visited,
 a:link {
     color: #8F8880;
-}
+} */
 
 a:hover {
-    background-color: #986F1D;
+    background-color: #3d51a3;
     color: #fff;
 }
 
@@ -337,7 +404,7 @@ a.tel:hover {
 /*.region-content-header div[id*="block-views-image-slideshows-block"].last {*/
 .region-content-header div.last {
     margin: 0;
-} 
+}
 
 .region-content-header > div {
     display: inline-block;
@@ -450,6 +517,11 @@ blockquote:before {
 
 blockquote p:first-of-type {
     display: inline;
+}
+
+.quote {
+  text-align: center;
+  font-size: 130%;
 }
 
 table.dvd-slideshow-video-storybook,
@@ -600,7 +672,7 @@ table.dvd-slideshow-video-storybook,
 }
 
 .section-blog .view-content .views-row .views-column-first {
-    padding-left: 0;    
+    padding-left: 0;
 }
 
 .section-blog .view-content .views-row .views-column-last {
