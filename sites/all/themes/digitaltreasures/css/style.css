@@ -451,7 +451,8 @@ li a,
 li a:active,
 li a:visited,
 li a:link {
-    color: #8F8880;
+    /*color: #8F8880;*/
+  color: #333333;
     text-decoration: none;
 }
 
@@ -934,7 +935,8 @@ span.field-label {
 	border-radius:6px;
 	border:1px solid #dcdcdc;
 	display:inline-block;
-	color:#8F8880;
+	/*color:#8F8880;*/
+  color: #333333;
 	/*font-family:arial;*/
 	/*font-size:15px;*/
 	font-weight:normal;
