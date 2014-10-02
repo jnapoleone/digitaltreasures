@@ -19,7 +19,7 @@ function dt_leads_webform_block_view($delta = '') {
   switch ($delta) {
     case 'dt_leads_webform':
       $path = drupal_get_path('module', 'dt_leads_webform');
-      $block['subject'] = t('More information');
+      $block['subject'] = t('For More Information');
       $block['content'] = array(
         '#theme' => 'dt_leads_webform',
         '#attached' => array(
