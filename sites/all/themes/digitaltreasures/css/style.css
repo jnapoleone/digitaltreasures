@@ -440,8 +440,8 @@ h4 {
   font-size: 1em;
 }
 
-#block-menu-menu-footer-menu h3 {
-    color: #986F1D;
+#block-menu-menu-footer-menu a {
+    color: #3d51a3;
     font-size: 1.1em;
     font-weight: bold;
 }
