@@ -1,0 +1,4 @@
+name = Digital Treasures Leads Webform
+description = A webform that posts sales leads from the website to the Zoho CRM.
+core = 7.x
+package = Digital Treasures

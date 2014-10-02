@@ -73,11 +73,11 @@ q:before { content: open-quote; }
 
 q:after { content: close-quote; }
 
-#block-webform-client-block-328 {
+.block-dt-leads-webform {
   border-top: 1px solid #eeeeee;
 }
 
-.webform-client-form-328 {
+.dt-leads__form {
 
   padding: 1.5em;
   background: rgba(195,43,98,0.25);
@@ -85,7 +85,10 @@ q:after { content: close-quote; }
   /*box-shadow: inset 2px 2px 2px #9D053C,inset -2px -2px 2px #9D053C;*/
 }
 
-.webform-client-form-328 .webform-component {
+.dt-leads__item--first-name,
+.dt-leads__item--last-name,
+.dt-leads__item--email,
+.dt-leads__item--phone {
   float: left;
   width: 50%;
   margin-top: 0;
@@ -94,84 +97,86 @@ q:after { content: close-quote; }
   overflow: hidden;
 }
 
-.webform-client-form-328 .webform-component--description {
-  border-top: none;
+.dt-leads__item--first-name,
+.dt-leads__item--email{
+  padding-right: .75em;
+  padding-left: .357em;
 }
 
-.webform-client-form-328 .webform-component--description p{
-  padding-left: 0.357em;
+.dt-leads__item--last-name,
+.dt-leads__item--phone {
+  padding-right: .357em;
+  padding-left: .75em;
 }
 
-.webform-client-form-328 .webform-component--first-name,
-.webform-client-form-328 .webform-component--email {
-  padding-right: 5px;
-  /*border-right: 1px solid #eeeeee;*/
-}
-.webform-client-form-328 .webform-component--last-name,
-.webform-client-form-328 .webform-component--phone {
-  padding-left: 5px;
-  /*border-right: 1px solid #eeeeee;*/
+.dt-leads__item--description,
+.dt-leads__item--submit {
+  padding-right: .357em;
+  padding-left: .357em;
+  clear: left;
 }
 
-.webform-client-form-328 label {
-  margin-top: 0.75em;
-  padding-left: 0.357em;
+.dt-leads__item--required {
+  color: #C32B62;
 }
-.webform-client-form-328 .form-text,
-.webform-client-form-328 .form-textarea {
-  width: 98%;
+
+.dt-leads__item--help {
+  float: right;
+  padding: 0 10px;
+  background: #3D51A3;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 75%;
+}
+
+.dt-leads__item--first-name .dt-leads__textfield.ng-invalid-minlength:not(:focus),
+.dt-leads__item--last-name .dt-leads__textfield.ng-invalid-minlength:not(:focus) {
+  color: #ffffff;
+  background: #ff0000;
+}
+
+.dt-leads__item--phone .dt-leads__textfield.ng-invalid-pattern:not(:focus),
+.dt-leads__item--email .dt-leads__textfield.ng-invalid-pattern:not(:focus) {
+/*.dt-leads__textfield.ng-invalid {*/
+  color: #ffffff;
+  background: #ff0000;
+}
+
+.dt-leads__textfield,
+.dt-leads__textarea {
+  width: 100%;
   max-width: 100%;
-  margin: 0.357em 0.357em 0.357em 0.357em;
+  margin: 0.357em 0 1.5em 0;
   padding: 0.75em;
   /*border: none;*/
   border: 1px solid #dddddd;
   outline: none;
-
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+       -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
 }
 
-.webform-client-form-328 .form-textarea {
-    width: 99%;
+.dt-leads__item--last-name .dt-leads__textfield,
+.dt-leads__item--phone .dt-leads__textfield {
+  float: right;
+  /*margin-left: 0.75em;*/
 }
 
-.webform-client-form-328 .form-text:focus,
-.webform-client-form-328 .form-textarea:focus {
-  margin: 0.357em 0.357em 0.357em 0.357em;
+.dt-leads__item--trap {
+  visibility: hidden;
+  height: 0;
+}
+
+.dt-leads__textfield:focus,
+.dt-leads__textarea:focus {
+  /*margin: 0.357em 0.357em 1.5em 0.357em;*/
   padding: .75em;
   border: 1px solid #C32B62;
   -webkit-box-shadow: 0 0 0.357em #C32B62;
      -moz-box-shadow: 0 0 0.357em #C32B62;
           box-shadow: 0 0 0.357em #C32B62;
 }
-
-.webform-client-form-328 .webform-component--description {
-  float: none;
-  width: 100%;
-}
-
-.webform-client-form-328 .webform-component--question {
-  float: none;
-  width: 100%;
-  clear: both;
-}
-
-.webform-client-form-328 .form-submit {
-  margin-left: 0.357em;
-}
-
-/*.form-submit {
-
-  padding: 0.357em 1.071em;
-  background: #C32B62;
-  background-image: linear-gradient(#DD457C,#C32B62);
-  border-radius: 20px;
-  border: 1px solid #AA1249;
-  border-bottom: 1px solid #770016;
-  border-right-color: #90002F;
-  border-left-color: #90002F;
-  color: #ffffff;
-  text-shadow: 1px 1px 0 #90002F;
-  outline: none;
-}*/
 
 .form-submit {
 
@@ -204,6 +209,12 @@ q:after { content: close-quote; }
 .form-submit:active {
   background:#334799;
   border-color: #3D51A3;
+}
+
+.form-submit:disabled {
+  background:#8A9EF0;
+  border-color: #7084D6;
+  color: rgba( 255,255,255,.75 );
 }
 
 .hours-of-operation-table {
@@ -346,7 +357,7 @@ q:after { content: close-quote; }
 
 .image--interac {
   border: none;
-  border-radius: none;
+  border-radius: 0;
 }
 
 .section-contact-us #content ul {

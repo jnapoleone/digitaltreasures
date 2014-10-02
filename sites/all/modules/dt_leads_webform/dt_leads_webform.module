@@ -1,0 +1,53 @@
+<?php
+/**
+ * Implements hook_block_info().
+ */
+function dt_leads_webform_block_info() {
+  $blocks['dt_leads_webform'] = array(
+    'info' => t('Digital Treasures Leads Webform'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function dt_leads_webform_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'dt_leads_webform':
+      $path = drupal_get_path('module', 'dt_leads_webform');
+      $block['subject'] = t('More information');
+      $block['content'] = array(
+        '#theme' => 'dt_leads_webform',
+        '#attached' => array(
+          'js' => array(
+            'https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js',
+//            $path . '/js/dt_leads_webform.js',
+          ),
+        ),
+      );
+      break;
+  }
+  return $block;
+}
+
+function dt_leads_webform_theme() {
+  global $base_url;
+//  global $node;
+//  $path = menu_get_object( 'node', $node->nid );
+  $node  = menu_get_object( 'node' );
+  $alias = drupal_get_path_alias( 'node/'.$node->nid );
+
+  return array(
+    'dt_leads_webform' => array(
+      'template' => 'dt-leads-webform',
+      'variables' => array(
+        'base_url' => $base_url . '/' . $alias,
+        'title'    => $node->title,
+      ),
+    ),
+  );
+}
