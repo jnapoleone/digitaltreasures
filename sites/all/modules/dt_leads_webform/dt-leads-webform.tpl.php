@@ -4,7 +4,7 @@
     <input type="hidden" name="xnQsjsdp" value=EfEyMGDXLbk$/>
     <input type="hidden" name="xmIwtLD" value=*nl06dMnyEqOOxTacc5oZQw1vyXgS1pG/>
     <input type="hidden" name="actionType" value=TGVhZHM=/>
-    <input type="hidden" name="returnURL" value="<?php print $base_url; ?>" />
+    <input type="hidden" name="returnURL" value="<?php print $url; ?>" />
     <input type='hidden' maxlength="20" name="Lead Source" value="<?php print $title; ?>"/>
     <div class="dt-leads__item--first-name">
       <span class="dt-leads__item--help" data-ng-show="leadsForm.firstName.$invalid && !leadsForm.firstName.$pristine">Required</span>

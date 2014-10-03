@@ -17,15 +17,29 @@ function dt_leads_webform_block_view($delta = '') {
   $block = array();
 
   switch ($delta) {
+
     case 'dt_leads_webform':
-      $path = drupal_get_path('module', 'dt_leads_webform');
+
+      global $base_url;
+
+      // Get the node object
+      $node  = menu_get_object();
+
+      // Get the path alias for the node->nid
+      $alias = drupal_get_path_alias( 'node/'.$node->nid );
+
+      // Set the variables for the theme hook
+      $variables = array( 'url' => $base_url . '/' . $alias, 'title' => $node->title );
+
+      // Set the block title
       $block['subject'] = t('For More Information');
+
+      // Set the block content
       $block['content'] = array(
-        '#theme' => 'dt_leads_webform',
+        '#markup' => theme( 'dt_leads_webform', $variables ),
         '#attached' => array(
           'js' => array(
             'https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js',
-//            $path . '/js/dt_leads_webform.js',
           ),
         ),
       );
@@ -34,19 +48,14 @@ function dt_leads_webform_block_view($delta = '') {
   return $block;
 }
 
-function dt_leads_webform_theme() {
-  global $base_url;
-//  global $node;
-//  $path = menu_get_object( 'node', $node->nid );
-  $node  = menu_get_object( 'node' );
-  $alias = drupal_get_path_alias( 'node/'.$node->nid );
+function dt_leads_webform_theme( $existing, $type, $theme, $path ) {
 
   return array(
     'dt_leads_webform' => array(
       'template' => 'dt-leads-webform',
       'variables' => array(
-        'base_url' => $base_url . '/' . $alias,
-        'title'    => $node->title,
+        'url'   => NULL,
+        'title' => NULL,
       ),
     ),
   );
