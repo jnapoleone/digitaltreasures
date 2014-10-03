@@ -29,7 +29,7 @@ function dt_leads_webform_block_view($delta = '') {
       $alias = drupal_get_path_alias( 'node/'.$node->nid );
 
       // Set the variables for the theme hook
-      $variables = array( 'url' => $base_url . '/' . $alias, 'title' => $node->title );
+      $variables = array( 'url' => $base_url , 'title' => $node->title );
 
       // Set the block title
       $block['subject'] = t('For More Information');
