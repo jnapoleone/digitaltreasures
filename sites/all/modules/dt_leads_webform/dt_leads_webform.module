@@ -26,7 +26,7 @@ function dt_leads_webform_block_view($delta = '') {
       $node  = menu_get_object();
 
       // Get the path alias for the node->nid
-      $alias = drupal_get_path_alias( 'node/'.$node->nid );
+      //$alias = drupal_get_path_alias( 'node/'.$node->nid );
 
       // Set the variables for the theme hook
       $variables = array( 'url' => $base_url , 'title' => $node->title );
