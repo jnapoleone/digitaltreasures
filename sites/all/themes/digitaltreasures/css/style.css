@@ -1038,6 +1038,13 @@ span.field-label {
   width: 34%;
 }
 
+.promo {
+
+  background: #c32b62;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #770016;
+}
+
 /**
 * CKEditor styles
 */
