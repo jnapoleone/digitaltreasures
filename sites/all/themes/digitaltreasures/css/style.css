@@ -1045,6 +1045,11 @@ span.field-label {
   text-shadow: 1px 1px 2px #770016;
 }
 
+th.promo {
+
+  letter-spacing: 1px;
+}
+
 /**
 * CKEditor styles
 */
