@@ -667,6 +667,7 @@ a.tel:hover {
 .promo-banner--container {
 
   height: 56px;
+  margin-bottom: 0;
 }
 
 .promo-banner.first.last {
