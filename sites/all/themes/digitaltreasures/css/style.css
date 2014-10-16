@@ -664,6 +664,11 @@ a.tel:hover {
   text-shadow: 1px 1px 2px #770016;
 }
 
+.promo-banner--container {
+
+  height: 56px;
+}
+
 .promo-banner.first.last {
   margin-top: 0;
 }
