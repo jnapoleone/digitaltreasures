@@ -589,15 +589,22 @@ a.tel:hover {
   margin: 0;
 }
 
-.field--featured-image,
-.field--featured-video,
-.digital-conversion-services--slideshow,
-.photo-one--slideshow,
-.photo-two--slideshow,
-.photo-three--sliedshow,
-.publishing-services-one--slideshow,
-.publishing-services-two--slideshow,
-.header-image {
+/*.field--featured-image,*/
+/*.field--featured-video,*/
+/*.digital-conversion-services--slideshow,*/
+/*.photo-one--slideshow,*/
+/*.photo-two--slideshow,*/
+/*.photo-three--sliedshow,*/
+/*.publishing-services-one--slideshow,*/
+/*.publishing-services-two--slideshow,*/
+/*.header-image {*/
+  /*display: inline-block;*/
+  /*margin: 0 auto;*/
+/*}*/
+
+.header--image,
+.header--slideshow {
+
   display: inline-block;
   margin: 0 auto;
 }
