@@ -339,6 +339,40 @@ q:after { content: close-quote; }
   line-height: 1.50em;
 }
 
+.payment-shipping-options {
+}
+
+.payment-shipping-options .list--item {
+
+  float:left;
+  margin-right: .5em;
+}
+
+.payment-shipping-options .paypal--item {
+
+  margin-right: 5em;
+}
+.payment-shipping--image {
+  width: auto;
+  height: 35px;
+  margin-bottom: 1.5em
+}
+
+.visa--image,
+.mastercard--image,
+.paypal--image,
+.interac--image {
+
+  border-radius: 5px;
+  border: 1px solid rgba( 0,0,0,.10);
+  box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+
+.interac--image {
+  border: none;
+  border-radius: 0;
+}
+
 .payment-options {
   display: inline-block;
   position: relative;
@@ -555,19 +589,18 @@ a.tel:hover {
   margin: 0;
 }
 
-/*.field-name-field-featured-image {
-    border-bottom: 1px solid #ddd !important;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}*/
-
-/*.region-content-header .block {*/
-/*margin: 0 50px 0 0;*/
-/*}*/
-
-/*.region-content-header .first.last {*/
-/*margin: 0;*/
-/*}*/
+.field--featured-image,
+.field--featured-video,
+.digital-conversion-services--slideshow,
+.photo-one--slideshow,
+.photo-two--slideshow,
+.photo-three--sliedshow,
+.publishing-services-one--slideshow,
+.publishing-services-two--slideshow,
+.header-image {
+  display: inline-block;
+  margin: 0 auto;
+}
 
 .region-content-header div[id*="block-views-image-slideshows-block"] {
   /*    background: #d0d0d0;*/
@@ -591,11 +624,11 @@ a.tel:hover {
   margin-right: 0;
 }
 
-.region-content-header > div {
-  display: inline-block;
+/*.region-content-header > div {*/
+  /*display: inline-block;*/
   /*float: left;*/
   /*margin-right: 40px;*/
-}
+/*}*/
 
 .region-content-header .youtube-commercial {
   height: 250px;
@@ -607,7 +640,7 @@ a.tel:hover {
   margin:0;
 }
 
-.region-content-header .promo-banner {
+.promo-banner {
 
   display: block;
   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
@@ -624,11 +657,11 @@ a.tel:hover {
   text-shadow: 1px 1px 2px #770016;
 }
 
-.region-content-header .promo-banner.first.last {
+.promo-banner.first.last {
   margin-top: 0;
 }
 
-.region-content-header .promo-banner:before, .region-content-header .promo-banner:after {
+.promo-banner:before, .promo-banner:after {
   content: "";
   position: absolute;
   display: block;
@@ -636,17 +669,17 @@ a.tel:hover {
   border: 1.5em solid #AA1249;
   z-index: -1;
 }
-.region-content-header .promo-banner:before {
+.promo-banner:before {
   left: -2em;
   border-right-width: 1.5em;
   border-left-color: transparent;
 }
-.region-content-header .promo-banner:after {
+.promo-banner:after {
   right: -2em;
   border-left-width: 1.5em;
   border-right-color: transparent;
 }
-.region-content-header .promo-banner .banner-content:before, .region-content-header .promo-banner .banner-content:after {
+.promo-banner .banner-content:before, .promo-banner .banner-content:after {
   content: "";
   position: absolute;
   display: block;
@@ -654,13 +687,53 @@ a.tel:hover {
   border-color: #90002F transparent transparent transparent;
   bottom: -1em;
 }
-.region-content-header .promo-banner .banner-content:before {
+.promo-banner .banner-content:before {
   left: 0;
   border-width: 1em 0 0 1em;
 }
-.region-content-header .promo-banner .banner-content:after {
+.promo-banner .banner-content:after {
   right: 0;
   border-width: 1em 1em 0 0;
+}
+
+.promo-banner__sticky.floating-block-active {
+  z-index: 1;
+}
+
+.floating-block-active .promo-banner:before,
+.floating-block-active .promo-banner:after {
+  content: "";
+  position: static;
+  bottom: auto;
+  border: none;
+  z-index: 0;
+}
+
+.floating-block-active .promo-banner:before {
+  left: auto;
+  border-right-width: 0;
+  border-left-color: transparent;
+}
+.floating-block-active .promo-banner:after {
+  right: auto;
+  border-left-width: 0;
+  border-right-color: transparent;
+}
+.floating-block-active .promo-banner .banner-content:before, .floating-block-active .promo-banner .banner-content:after {
+  content: "";
+  position: static;
+  display: block;
+  border-style: none;
+  border-color: transparent;
+  bottom: auto;
+}
+.floating-block-active .promo-banner .banner-content:before {
+  left: auto;
+  border-width: 0;
+}
+.floating-block-active .promo-banner .banner-content:after {
+  right: auto;
+  border-width: 0;
 }
 
 .getting-your-materials-to-us {
