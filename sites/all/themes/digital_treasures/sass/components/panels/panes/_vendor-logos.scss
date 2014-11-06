@@ -1,0 +1,31 @@
+.pane--vendor-logos {
+
+	display: none;
+	clear: both;
+
+//	@include grid-span( 4, 1 );
+
+	@include breakpoint( $bp-6-grid ) {
+
+		display: block;
+		@include grid-span( 6, 1 );
+	}
+
+	@include breakpoint( $bp-footer-menu-inline ) {
+		@include grid-span( 6, 1 );
+	}
+
+	@include breakpoint( $bp-12-grid ) {
+
+		float: none;
+		width: auto;
+		max-height: none;
+		@include grid-span( 12, 1 );
+		@include trailer( 1, $lg-base-font-size );
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+}

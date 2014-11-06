@@ -1,0 +1,19 @@
+.panel-2col {
+
+	overflow: hidden;
+
+	@include grid-span(4, 1 );
+
+	@include breakpoint( $bp-6-grid ) {
+
+		@include grid-span( 6, 1 );
+	}
+
+	@include breakpoint( $bp-12-grid ) {
+
+		float: none;
+		width: auto;
+		max-width: bp-min-width-res();
+		margin: 0 auto;
+	}
+}

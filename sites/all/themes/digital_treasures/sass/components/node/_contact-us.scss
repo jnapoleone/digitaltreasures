@@ -1,0 +1,94 @@
+.node-contact-us {
+
+	@include float-span( 4 );
+
+	@include breakpoint( $bp-6-grid ) {
+
+		@include float-span( 6 );
+	}
+
+//	@include breakpoint( $bp-12-grid ) {
+//
+//		@include float-span( 12 );
+//	}
+
+	@include breakpoint( $bp-12-grid ) {
+		float: none;
+//		$column-width: column-span(1 , 1);
+//		$column-width-unitless: ( $column-width / ( $column-width * 0 + 1 ) );
+//		$column-width-px: $bp-max-width-res * ( $column-width-unitless/100 );
+//		max-width: $bp-max-width-res - ( $column-width-px * 2 );
+		max-width: bp-min-width-res();
+//		@include leader( 1, $lg-base-font-size );
+//		@include trailer( 1, $lg-base-font-size );
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
+	.map {
+		border: .33333em solid #eee;
+		padding: .33333em;
+	}
+}
+
+.locations__list {
+
+	@include no-bullets;
+	padding-left: 0;
+
+	.locations__list-title {
+
+		color: $beta-color;
+	}
+
+	a {
+
+		color: $alpha-color;
+	}
+
+	@include breakpoint( $bp-12-grid ) {
+
+		display: none;
+	}
+}
+
+
+@include keyframes (highlight) {
+
+	0% {
+
+		color: $alpha-color;
+	}
+
+	100% {
+
+		color: $base-font-color;
+	}
+}
+
+#etobicoke--map {
+
+
+	&:target {
+
+		@include breakpoint( $bp-12-grid ) {
+
+			@include animation( highlight 1s linear );
+		}
+	}
+
+}
+
+#north-york--map {
+
+
+	&:target {
+
+		@include breakpoint( $bp-12-grid ) {
+
+			@include animation( highlight 1s linear );
+		}
+	}
+
+}

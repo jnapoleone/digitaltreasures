@@ -1,0 +1,49 @@
+$breakpoint-to-ems           : true;
+
+$bp-6-res                    : 500px;
+$bp-12-res                   : 1024px;
+
+$bp-max-width-res            : 1280px;
+
+$bp-menu-resp-small-res: 560px;
+
+$bp-features-res             : 800px;
+$bp-footer-menu-inline-res   : 800px;
+$bp-vendor-logos-res         : 970px;
+
+$bp-social-networking-res    : 357px;
+
+$bp-dt-leads-input-float-res : 600px;
+
+$bp-pricing-table-swipe-res  : 750px;
+
+$bp-payment-options-two-lines-res: 458px;
+
+$bp-payment-options-one-line-res: 755px;
+
+$bp-6-grid                   : 'screen' $bp-6-res;
+$bp-12-grid                  : 'screen' $bp-12-res;
+
+$bp-max-width                : 'screen' $bp-max-width-res;
+$bp-max-width-handheld       : handheld ($bp-max-width-res) (orientation landscape);
+
+
+
+$bp-menu-resp-12             : handheld ($bp-12-res) (orientation landscape);
+$bp-main-menu-horiz          : $bp-12-grid;
+
+$bp-features                 : $bp-features-res;
+
+$bp-footer-menu-inline       : 'screen' $bp-footer-menu-inline-res;
+
+$bp-vendor-logos             : 'screen' $bp-vendor-logos-res;
+
+$bp-social-networking-grid   : 'screen' $bp-social-networking-res;
+
+$bp-dt-leads-input-float-grid: 'screen' $bp-dt-leads-input-float-res;
+
+$bp-pricing-table-swipe-grid : 'screen' $bp-pricing-table-swipe-res;
+
+$bp-payment-options-two-lines-grid: 'screen' $bp-payment-options-two-lines-res;
+
+$bp-payment-options-one-line-grid: 'screen' $bp-payment-options-one-line-res;

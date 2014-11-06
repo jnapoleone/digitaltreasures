@@ -1,0 +1,259 @@
+.footer--menu {
+
+	@include trailer( 1, $sm-base-font-size );
+	@include padding-leader( 1, $sm-base-font-size );
+	@include padding-trailer( 1, $sm-base-font-size );
+	border-top: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+	overflow: hidden;
+
+	@include breakpoint( $bp-12-grid ) {
+
+		max-height: none;
+		@include grid-span( 12, 1 );
+		@include padding-leader( 1, $lg-base-font-size );
+		@include padding-trailer( 1, $lg-base-font-size );
+	}
+
+	@include breakpoint( bp-min-width-grid() ) {
+
+		float: none;
+		width: auto;
+		max-width: bp-min-width-res();
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.menu {
+
+		@include no-bullets;
+		margin: 0;
+		padding-left: 0;
+		overflow: hidden;
+
+		img {
+
+			width: 100%;
+			height: auto;
+			@include trailer(.25, $sm-base-font-size);
+			border: 1px solid $border-color;
+
+			@include breakpoint( $bp-12-grid ) {
+				@include trailer(.25, $lg-base-font-size);
+			}
+		}
+
+		.menu--title {
+
+			@include trailer(.25, $sm-base-font-size);
+			min-height: rhythm( 3, $sm-large-font-size );
+
+			@include breakpoint( $bp-12-grid ) {
+				@include trailer(.25, $lg-base-font-size);
+			}
+
+		}
+
+		li:first-child {
+
+			@include float-span(2);
+
+			@include breakpoint($bp-6-grid) {
+
+				@include float-span(2);
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+
+				@include float-span( 2 );
+			}
+
+			@include layout-at( ( 'gutter style': 'opposite' ), bp-min-width-grid() ) {
+
+				@include float-span( 2 );
+			}
+
+			.menu--title {
+
+				min-height: rhythm( 2, $sm-large-font-size );
+
+				@include breakpoint( $bp-6-grid ) {
+
+					min-height: rhythm( 3, $sm-large-font-size );
+				}
+
+				@include breakpoint( $bp-footer-menu-inline ) {
+					min-height: rhythm( 3, $sm-large-font-size );
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		li:nth-child(2){
+
+			@include float-span(2);
+
+			@include breakpoint($bp-6-grid) {
+
+				@include float-span(2);
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+
+				@include float-span( 2 );
+			}
+
+			@include layout-at( ( 'gutter style': 'opposite' ), bp-min-width-grid() ) {
+
+				@include float-span( 2 );
+			}
+
+			.menu--title {
+
+				min-height: rhythm( 2, $sm-large-font-size );
+
+				@include breakpoint( $bp-6-grid ) {
+
+					min-height: rhythm( 3, $sm-large-font-size );
+				}
+
+				@include breakpoint( $bp-footer-menu-inline ) {
+					min-height: rhythm( 3, $sm-large-font-size );
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		li:nth-child(3){
+
+			@include float-span(2);
+
+			@include breakpoint($bp-6-grid) {
+
+				@include float-span(2);
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+
+				@include float-span( 2 );
+			}
+
+			@include layout-at( ( 'gutter style': 'opposite' ), bp-min-width-grid() ) {
+
+				@include float-span( 2 );
+			}
+
+			.menu--title {
+
+				min-height: rhythm( 3, $sm-large-font-size );
+
+				@include breakpoint( $bp-footer-menu-inline ) {
+					min-height: rhythm( 3, $sm-large-font-size );
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		li:nth-child(4){
+
+			@include float-span(2);
+
+			@include breakpoint($bp-6-grid) {
+
+				@include float-span(2);
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+
+				@include float-span( 2 );
+			}
+
+			@include layout-at( ( 'gutter style': 'opposite' ), bp-min-width-grid() ) {
+
+				@include float-span( 2 );
+			}
+
+			.menu--title {
+
+				min-height: rhythm( 3, $sm-large-font-size );
+
+				@include breakpoint( $bp-6-grid ) {
+
+					min-height: rhythm( 1, $sm-large-font-size );
+					margin-bottom: 0;
+				}
+
+				@include breakpoint( $bp-footer-menu-inline ) {
+					min-height: rhythm( 3, $sm-large-font-size );
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		li:nth-child(5){
+
+			@include float-span(2);
+
+			@include breakpoint($bp-6-grid) {
+
+				@include float-span(2);
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+
+				@include float-span( 2 );
+			}
+
+			@include layout-at( ( 'gutter style': 'opposite' ), bp-min-width-grid() ) {
+
+				@include float-span( 2 );
+			}
+
+			.menu--title {
+
+				min-height: rhythm( 1, $sm-large-font-size );
+				margin-bottom: 0;
+
+				@include breakpoint( $bp-footer-menu-inline ) {
+					min-height: rhythm( 3, $sm-large-font-size );
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		li:nth-child(6) {
+
+			@include float-span(2);
+
+			@include breakpoint($bp-6-grid) {
+
+				@include float-span(2);
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+
+				@include float-span( 2 );
+				margin-right: 0;
+			}
+
+			@include layout-at( ( 'gutter style': 'opposite' ), bp-min-width-grid() ) {
+
+				@include float-span( 2 );
+				margin-right: 0;
+			}
+
+			.menu--title {
+
+				min-height: rhythm( 1, $sm-large-font-size );
+				margin-bottom: 0;
+
+				@include breakpoint( $bp-footer-menu-inline ) {
+					min-height: rhythm( 3, $sm-large-font-size );
+					margin-right: 0;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+}

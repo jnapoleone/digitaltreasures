@@ -1,0 +1,18 @@
+.panel-col-first {
+
+	@include layout-at( ( 'grid': 12 ), $bp-12-grid ) {
+
+		$gutter-width: gutter-span();
+		@include grid-span( 10, 1 );
+		@include trailer( 1, $lg-base-font-size );
+		padding-right: $gutter-width;
+		border-right: 1px solid $border-color;
+		clear: both;
+	}
+
+	@include layout-at( ( 'gutter style': 'opposite'), bp-min-width-grid() ) {
+
+		@include grid-span( 10, 1 );
+		clear: both;
+	}
+}

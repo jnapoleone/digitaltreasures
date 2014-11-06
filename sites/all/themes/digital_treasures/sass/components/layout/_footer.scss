@@ -1,0 +1,13 @@
+
+.l-footer {
+
+	clear: both;
+	background: #ffffff;
+	overflow: hidden;
+
+	@include breakpoint( $bp-12-grid ) {
+
+		max-width: $bp-max-width-res;
+		margin: 0 auto;
+	}
+}

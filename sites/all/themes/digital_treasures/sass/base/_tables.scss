@@ -1,0 +1,160 @@
+table {
+
+	@include trailer( 1, $sm-base-font-size );
+	border: 1px solid $border-color;
+
+	&.dvd-slideshow-video-storybook {
+
+		border: none;
+	}
+
+	&.hours-of-operation--table {
+
+		border: none;
+		border-collapse: collapse;
+	}
+
+	@include breakpoint( $bp-12-grid ) {
+
+		@include trailer( 1, $lg-base-font-size );
+	}
+}
+
+td,
+th {
+
+	border: 1px solid $border-color;
+	background: transparent;
+
+	.dvd-slideshow-video-storybook & {
+
+		border: none;
+	}
+
+	p {
+
+		$margin: rhythm( .33333, $sm-base-font-size );
+		margin: $margin;
+
+		@include breakpoint( $bp-12-grid ) {
+
+			$margin: rhythm( .33333, $lg-base-font-size );
+			margin: $margin;
+		}
+	}
+}
+
+th {
+
+	text-align: center;
+
+	&.promo {
+
+		letter-spacing: 1px;
+	}
+}
+
+td {
+
+	.hours-of-operation--table & {
+
+		border: none;
+
+		&:first-of-type {
+
+			width: 40%;
+			border: none;
+		}
+
+		&:last-of-type {
+
+			width: 60%;
+			border: none;
+		}
+
+		p {
+
+			margin-top: 0;
+			margin-bottom: 0;
+
+			&:first-of-type {
+
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+.calendars--table {
+
+	width: 50%;
+}
+
+.published-photo-albums-scrapbooks {
+
+	width: 100%;
+}
+
+
+.hours-of-operation--table {
+
+	width: 100%;
+	@include trailer( 1, $sm-base-font-size );
+	border: none;
+	border-collapse: collapse;
+
+	@include breakpoint( $bp-6-grid ) {
+		width: 50%;
+	}
+
+	@include breakpoint( $bp-12-grid ) {
+
+		width: 40%;
+		@include trailer( 1, $lg-base-font-size );
+	}
+
+	.node-contact-us & {
+
+		width: 100%;
+	}
+
+	tbody {
+
+		border: none;
+	}
+
+	td {
+
+		border: none;
+
+		p {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	td:first-of-type {
+		width: 40%;
+
+		p {
+
+			margin-left: 0;
+		}
+	}
+
+	td:last-of-type {
+
+		width: 60%;
+	}
+}
+
+.pricing-table {
+
+	overflow-x: auto;
+
+	.pricing-table__table {
+
+		width: 100%;
+		white-space: nowrap;
+	}
+}

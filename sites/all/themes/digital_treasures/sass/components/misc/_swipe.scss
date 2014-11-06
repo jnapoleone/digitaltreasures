@@ -1,0 +1,12 @@
+.swipe {
+
+	@include breakpoint( $bp-pricing-table-swipe-grid ) {
+
+		display: none;
+	}
+}
+
+.swipe__alert {
+
+	color: #c32b62;
+}

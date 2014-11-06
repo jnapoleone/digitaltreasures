@@ -1,0 +1,6 @@
+@include add-grid( 4 );
+@include add-grid( 6 at $bp-6-res );
+@include add-grid( 12 at $bp-12-res);
+@include add-gutter( 1/3 );
+@include add-gutter-style( 'split' );
+//@include sgs-change( 'debug', true );

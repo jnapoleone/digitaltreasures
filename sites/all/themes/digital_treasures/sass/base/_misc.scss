@@ -1,0 +1,35 @@
+//*:focus { outline: none; }
+
+.submitted {
+
+	font-style: italic;
+	@include adjust-font-size-to( $sm-small-font-size );
+
+	@include breakpoint( $bp-12-grid ) {
+
+		@include adjust-font-size-to( $lg-small-font-size );
+	}
+}
+
+.quote {
+
+	@include adjust-font-size-to( $sm-medium-font-size );
+	text-align: center;
+
+	@include breakpoint( $bp-12-grid ) {
+
+		@include adjust-font-size-to( $lg-medium-font-size );
+	}
+}
+
+.no-wrap {
+
+	white-space: nowrap;
+}
+
+.promo {
+
+	background: #c32b62;
+	color: #ffffff;
+	@include text-shadow( 1px 1px 2px #770016 );
+}

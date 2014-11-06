@@ -1,0 +1,64 @@
+@import "compass/layout/stretching";
+
+#logo {
+
+
+	$padding-horiz: rhythm( .5, $sm-base-font-size );
+	$padding-vert: rhythm( .33333, $sm-base-font-size );
+	display: block;
+	padding: $padding-vert $padding-horiz 0;
+
+	@include breakpoint( $bp-menu-resp-small-res ) {
+
+		position: absolute;
+		top: 0; bottom: 0;
+		width: 50%;
+	}
+
+	@include breakpoint( $bp-12-grid ) {
+		$gutter-width: gutter-span();
+		position: static;
+		width: 100%;
+		padding-left: $gutter-width/2;
+	}
+
+	@include breakpoint( bp-min-width-grid() ) {
+
+		padding-left: 0;
+	}
+
+	img {
+
+		@include layout-at( 2, $bp-menu-resp-small-res ) {
+			$gutter-width: gutter-span();
+			position: absolute;
+			top: 50%;
+			max-height: 90%;
+			padding-left: $gutter-width/2;
+			@include translateY( -50% );
+		}
+
+		@include breakpoint( $bp-6-grid ) {
+
+				$gutter-width: gutter-span();
+				padding-left: $gutter-width;
+		}
+
+		@include breakpoint($bp-12-grid) {
+
+			position: static;
+			top: auto;
+			display: inline-block;
+			max-height: none;
+			margin: rhythm( .5, $lg-base-font-size ) 0;
+			padding-left: 0;
+			@include transform( none );
+		}
+
+		@include breakpoint($bp-menu-resp-12) {
+
+			$gutter-width: gutter-span();
+			padding-left: $gutter-width;
+		}
+	}
+}

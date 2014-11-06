@@ -1,0 +1,7 @@
+<?php
+function picturefill_init() {
+
+  $library_path = libraries_get_path( 'picturefill' );
+
+  async_js_add_js( $library_path . '/picturefill.min.js', array('group' => JS_THEME ));
+}

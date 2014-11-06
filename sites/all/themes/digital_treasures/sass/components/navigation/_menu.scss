@@ -1,0 +1,21 @@
+
+.menu--swipe-up {
+
+	display: none;
+	text-align: center;
+
+	&.menu-swipe__visible {
+		display: block;
+	}
+}
+
+.menu--swipe-down {
+
+	display: none;
+	text-align: center;
+
+	&.menu-swipe__visible {
+		display: block;
+	}
+}
+

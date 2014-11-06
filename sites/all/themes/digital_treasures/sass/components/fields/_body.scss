@@ -1,0 +1,15 @@
+
+.field--body {
+
+//	.panel-1row-2col-col-first & {
+	.node-full & {
+
+		@include trailer( 1, $sm-base-font-size );
+//		border-bottom: 1px solid $border-color;
+
+		@include breakpoint( $bp-12-grid ) {
+
+			@include trailer( 1, $lg-base-font-size );
+		}
+	}
+}

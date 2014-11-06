@@ -1,0 +1,6 @@
+.field--name-body {
+
+	@include breakpoint( $bp-6-grid ) {
+		@include grid-span( 4, 1 );
+	}
+}

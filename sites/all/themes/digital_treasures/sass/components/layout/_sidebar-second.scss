@@ -1,0 +1,27 @@
+.l-sidebar-second {
+
+	position: absolute;
+	top:0;right: - bp-sidebar-second-width();
+
+	@include layout-at( ( 'grid': 12 ), $bp-12-grid ) {
+		position: relative;
+		top:auto;right:auto;
+		@include grid-span( 2, 11);
+		$gutter-width: gutter-span();
+	}
+
+	@include layout-at( ( 'gutter style': 'opposite'), bp-min-width-grid() ) {
+
+		@include grid-span( 2, 11 );
+	}
+}
+
+.aside__overflow-hidden {
+
+	overflow: hidden;
+
+	.menu__scroll {
+
+		overflow: scroll;
+	}
+}

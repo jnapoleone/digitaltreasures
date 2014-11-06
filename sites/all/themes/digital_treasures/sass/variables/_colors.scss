@@ -1,0 +1,19 @@
+
+$alpha-color: #c32b62;
+$beta-color: #3d51a3;
+$gamma-color: #333333;
+$delta-color: #8F8880;
+
+$base-font-color                  : $gamma-color;
+
+$border-color: lighten( $delta-color, 35 );
+
+$menu-rollover-bg-color: lighten( $delta-color, 40 );
+
+$responsive-menu-font-color       : #eeeeee;
+$responsive-menu-bg-color         : $delta-color;
+$responsive-menu-bg-color-darken  : darken( $delta-color, 10 );
+$responsive-menu-border-lighten   : lighten( $delta-color, 20 );
+$responsive-menu-border-darken    : darken( $delta-color, 10 );
+$responsive-menu-text-shadow-color: darken( $gamma-color, 5 );
+$responsive-menu-box-shadow-color : darken( $gamma-color, 20 );

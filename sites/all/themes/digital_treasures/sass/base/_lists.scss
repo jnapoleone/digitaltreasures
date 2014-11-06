@@ -1,0 +1,47 @@
+ul,
+ol {
+  margin-top: rhythm( 1, $sm-base-font-size );
+  margin-bottom: rhythm( 1, $sm-base-font-size );
+  margin-left: 0;
+  padding-left: 1.2em;
+}
+
+ul {
+
+	&.contact {
+
+		@include no-bullets;
+		padding-left: 0;
+
+		ul {
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-left: 50px;
+		}
+	}
+
+	&.tabs--primary {
+
+		border-color: $alpha-color;
+	}
+}
+
+li {
+
+	.tabs--primary & {
+
+		a {
+
+			background-color: $alpha-color;
+			color: #ffffff;
+			@include text-shadow( 1px 1px 0 darken( $alpha-color, 10 ) );
+		}
+
+		&.active {
+
+			a {
+				background: lighten( $alpha-color, 7 );
+			}
+		}
+	}
+}

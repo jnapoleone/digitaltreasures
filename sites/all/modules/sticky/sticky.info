@@ -1,0 +1,4 @@
+name = StickyJS
+description = A jQuery plugin called <a href="http://stickyjs.com/">StickJS</a> by <a href="http://anthonygarand.com">Anthony Garand</a>.
+core = 7.x
+package = Other

@@ -1,0 +1,17 @@
+.panel-1row-2col-row-top {
+
+	@include breakpoint($bp-features) {
+		@include trailer( 1, $sm-base-font-size );
+		border-bottom: 1px solid $border-color;
+	}
+
+	@include layout-at( ( 'grid': 12 ), $bp-12-grid ) {
+
+		@include grid-span( 12, 1 );
+	}
+
+	@include layout-at( ( 'gutter style': 'opposite'), bp-min-width-grid() ) {
+
+		@include grid-span( 12, 1 );
+	}
+}

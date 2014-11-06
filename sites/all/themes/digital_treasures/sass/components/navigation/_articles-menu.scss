@@ -1,0 +1,120 @@
+.articles-menu__link {
+
+	position: relative;
+	float: right;
+
+	background: $delta-color;
+	@include background-image( linear-gradient( $responsive-menu-bg-color, $responsive-menu-bg-color-darken) );
+	color: $responsive-menu-font-color;
+	@include text-shadow( 1px 1px 0 $responsive-menu-text-shadow-color );
+
+	$gutter-width: gutter-span();
+	padding: $gutter-width/2;
+
+	.l-region--navigation & {
+
+		$padding-vert: rhythm( .25, $sm-base-font-size );
+		display: block;
+		width: 50%;
+		padding-top: $padding-vert;
+		padding-bottom: $padding-vert;
+		text-align: center;
+
+		@include breakpoint( $bp-menu-resp-small-res ) {
+
+			display: none;
+		}
+	}
+
+	.l-region--branding & {
+
+		display: none;
+
+		@include breakpoint( $bp-menu-resp-small-res ) {
+
+			display: block;
+		}
+
+		@include breakpoint( $bp-12-grid ) { display:none;	}
+	}
+
+	@include breakpoint($bp-menu-resp-small-res) {
+
+		$gutter-width: gutter-span();
+		padding: .75em $gutter-width/2;
+	}
+
+	@include breakpoint( $bp-6-grid ) {
+
+		$gutter-width: gutter-span();
+		padding: $gutter-width/2;
+	}
+
+	@include breakpoint($bp-menu-resp-12) {
+
+		@include layout( 6 ) {
+
+			$gutter-width: gutter-span();
+			padding: .60em $gutter-width/2;
+		}
+	}
+
+	border-left: 1px solid $responsive-menu-border-lighten;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top:0;right:0;bottom:0;left:-2px;
+		width:100%;
+		height: 100%;
+		border-left: 1px solid $responsive-menu-border-darken;
+		z-index: 1;
+	}
+}
+
+.articles--menu {
+
+	position: relative;
+
+	.menu {
+
+		@include no-bullets;
+		width: bp-sidebar-second-menu-width();
+		content: bp-sidebar-second-menu-width();
+		@include trailer( 1, $sm-base-font-size );
+		margin: 0;
+		padding: 0;
+
+		@include breakpoint( $bp-12-grid ) {
+
+			@include trailer( 1, $lg-base-font-size );
+		}
+	}
+
+	.menu--item {
+
+		$padding: rhythm( .25, $sm-base-font-size );
+		position: relative;
+		display: block;
+		padding: $padding;
+		border-bottom: 1px solid $border-color;
+
+		&:hover {
+
+			background: $menu-rollover-bg-color;
+		}
+
+		@include breakpoint( $bp-12-grid ) {
+
+			$padding: rhythm( .25, $lg-base-font-size );
+			padding: $padding;
+		}
+	}
+
+	.first {
+
+		.menu--item {
+			padding-top: 0;
+		}
+	}
+}

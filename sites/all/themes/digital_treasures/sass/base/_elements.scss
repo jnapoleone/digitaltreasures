@@ -1,0 +1,140 @@
+//$base-line-height: 26px;
+//$base-font-size: $sm-base-font-size;
+@include establish-baseline($sm-base-font-size);
+@include breakpoint($bp-12-grid) {
+//	$base-font-size: $lg-base-font-size;
+//  $base-line-height: 24px;
+//	@include adjust-leading-to( 1, $lg-base-font-size );
+  @include establish-baseline($lg-base-font-size);
+}
+
+body {
+	@include adjust-leading-to( 1.2, $sm-base-font-size );
+	@include breakpoint($bp-12-grid) {
+
+		@include adjust-leading-to( 1, $lg-base-font-size );
+	}
+	color: $base-font-color;
+
+	@include breakpoint( $bp-max-width-res ) {
+		background: $delta-color;
+	}
+}
+
+p {
+	margin-top: 0;
+	@include trailer( 1, $sm-base-font-size );
+
+	@include breakpoint($bp-12-grid) {
+		@include trailer( 1, $lg-base-font-size );
+	}
+
+	.hours-of-operation-table td {
+
+		& {
+
+			margin-top: 0;
+			margin-bottom: 0;
+
+			&:first-of-type {
+
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+	color: $beta-color;
+
+	a & {
+
+		color: $beta-color;
+	}
+
+	& a {
+		color: $beta-color;
+	}
+}
+
+h1 {
+  @include adjust-font-size-to( $sm-xxlarge-font-size );
+  @include trailer( 1, $sm-xxlarge-font-size );
+
+	@include breakpoint( $bp-12-grid ) {
+
+		@include adjust-font-size-to( $lg-xxlarge-font-size );
+		@include trailer( 1, $lg-xxlarge-font-size );
+	}
+}
+
+h2 {
+  @include adjust-font-size-to( $sm-xlarge-font-size );
+  @include trailer( 1, $sm-xlarge-font-size );
+
+	@include breakpoint( $bp-12-grid ) {
+
+		@include adjust-font-size-to( $lg-xlarge-font-size );
+		@include trailer( 1, $lg-xlarge-font-size );
+	}
+}
+
+h3 {
+  @include adjust-font-size-to( $sm-large-font-size );
+  @include trailer( 1, $sm-large-font-size );
+
+	@include breakpoint( $bp-12-grid ) {
+
+		@include adjust-font-size-to( $lg-large-font-size );
+		@include adjust-leading-to( 1.2, $lg-large-font-size );
+		@include trailer( 1, $lg-large-font-size );
+	}
+}
+
+h4 {
+	@include adjust-font-size-to( $sm-medium-font-size );
+	@include trailer( 1, $sm-medium-font-size );
+
+	@include breakpoint( $bp-12-grid ) {
+
+		@include adjust-font-size-to( $lg-medium-font-size );
+		@include adjust-leading-to( 1.2, $lg-large-font-size );
+		@include trailer( 1, $lg-medium-font-size );
+	}
+}
+
+a {
+  color: $base-font-color;
+	text-decoration: none;
+//	@include underline( $alpha-color, $beta-color, false, 2, 1, true );
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active,
+  &:target{
+    @extend a;
+  }
+
+	&.target__link {
+
+		color: $alpha-color;
+	}
+
+	&[href^="tel"],
+	&[href^="mailto"],
+	&[href*="#"]{
+
+		color: $alpha-color;
+	}
+}
+
+address {
+
+	font-style: normal;
+	font-weight: 700;
+}

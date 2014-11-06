@@ -1,0 +1,25 @@
+
+.pane--image-slideshow {
+
+	display: none;
+
+	@include breakpoint( $bp-features ) {
+
+		display: block;
+		@include grid-span( 3, 4, $gutter-style: 'opposite' );
+
+	}
+
+	@include breakpoint( $bp-12-grid ) {
+
+		@include grid-span( 6, 7, $gutter-style: 'opposite' );
+	}
+
+	a {
+
+		@include breakpoint( $bp-features ) {
+
+
+		}
+	}
+}

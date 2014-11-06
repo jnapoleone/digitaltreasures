@@ -1,0 +1,120 @@
+.dt-leads__form {
+
+	@include trailer( 1, $sm-base-font-size );
+	padding: 1.5em;
+	background: rgba(195,43,98,0.25);
+	border: 6px solid #F65E95;
+
+	@include breakpoint( $bp-12-grid ) {
+
+		@include trailer( 1, $lg-base-font-size )
+	}
+}
+
+.dt-leads__item--first-name,
+.dt-leads__item--last-name,
+.dt-leads__item--email,
+.dt-leads__item--phone {
+
+	margin-top: 0;
+	margin-bottom: 0;
+	overflow: hidden;
+
+	@include breakpoint( $bp-dt-leads-input-float-grid ) {
+
+		float: left;
+		width: 50%;
+	}
+}
+
+.dt-leads__item--first-name,
+.dt-leads__item--email{
+
+	@include breakpoint( $bp-dt-leads-input-float-grid ) {
+
+		padding-right: .75em;
+		padding-left: .357em;
+	}
+}
+
+.dt-leads__item--last-name,
+.dt-leads__item--phone {
+
+	@include breakpoint( $bp-dt-leads-input-float-grid ) {
+
+		padding-right: .357em;
+		padding-left: .75em;
+	}
+}
+
+.dt-leads__item--description,
+.dt-leads__item--submit {
+
+	@include breakpoint( $bp-dt-leads-input-float-grid ) {
+
+		padding-right: .357em;
+		padding-left: .357em;
+		clear: left;
+	}
+}
+
+.dt-leads__item--required {
+	color: #C32B62;
+}
+
+.dt-leads__item--help {
+	float: right;
+	padding: 0 10px;
+	background: #3D51A3;
+	border-radius: 12px;
+	color: #ffffff;
+	@include adjust-font-size-to( $sm-small-font-size );
+
+	@include breakpoint( $bp-12-grid ) {
+
+		@include adjust-font-size-to( $lg-small-font-size );
+	}
+}
+
+.dt-leads__item--first-name .dt-leads__textfield.ng-invalid-minlength:not(:focus),
+.dt-leads__item--last-name .dt-leads__textfield.ng-invalid-minlength:not(:focus) {
+	color: #ffffff;
+	background: #ff0000;
+}
+
+.dt-leads__item--phone .dt-leads__textfield.ng-invalid-pattern:not(:focus),
+.dt-leads__item--email .dt-leads__textfield.ng-invalid-pattern:not(:focus) {
+	color: #ffffff;
+	background: #ff0000;
+}
+
+.dt-leads__textfield,
+.dt-leads__textarea {
+	width: 100%;
+	max-width: 100%;
+	margin: 0.357em 0 1.5em 0;
+	padding: 0.75em;
+	border: 1px solid #dddddd;
+	outline: none;
+	@include transition( all .3s ease-in-out );
+}
+
+.dt-leads__item--last-name .dt-leads__textfield,
+.dt-leads__item--phone .dt-leads__textfield {
+	float: right;
+}
+
+.dt-leads__item--trap {
+	visibility: hidden;
+	height: 0;
+}
+
+.dt-leads__textfield:focus,
+.dt-leads__textarea:focus {
+	padding: .75em;
+	border: 1px solid #C32B62;
+	@include box-shadow( 0 0 0.357em #C32B62 );
+//	-webkit-box-shadow: 0 0 0.357em #C32B62;
+//	-moz-box-shadow: 0 0 0.357em #C32B62;
+//	box-shadow: 0 0 0.357em #C32B62;
+}

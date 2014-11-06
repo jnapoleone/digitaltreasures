@@ -1,0 +1,8 @@
+<?php
+function sticky_init() {
+  $module_path = drupal_get_path( 'module', 'sticky' );
+  $library_path = libraries_get_path( 'stickyjs' );
+
+  drupal_add_js( $library_path . '/jquery.sticky.js', array( 'type' => 'file', 'group' => JS_LIBRARY ) );
+  drupal_add_js( $module_path . '/js/sticky.js', array( 'type' => 'file', 'group' => JS_LIBRARY ) );
+}

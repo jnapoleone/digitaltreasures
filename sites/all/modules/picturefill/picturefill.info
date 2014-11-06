@@ -1,0 +1,3 @@
+name = Picturefill
+description = Add the <a href="http://scottjehl.github.io/picturefill/">Picturefill</a> polyfill library by <a href="http://scottjehl.com/">Scott Jehl</a> to Drupal.
+core = 7.x

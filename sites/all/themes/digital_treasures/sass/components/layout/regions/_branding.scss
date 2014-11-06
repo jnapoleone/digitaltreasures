@@ -1,0 +1,26 @@
+
+.l-region--branding {
+	@include clearfix;
+	position: relative;
+	border-bottom: 1px solid $border-color;//$responsive-menu-border-lighten;
+
+//	@include layout-at( ('grid': 12, 'gutter': 1/2 ), $bp-12-grid ) {
+//
+//		@include grid-span( 12, 1 );
+//		border-bottom: none;
+//	}
+//
+//	@include layout-at( ( 'gutter style': 'opposite'), bp-min-width-grid() ) {
+//
+//		@include grid-span( 12, 1 );
+//	}
+
+	@include breakpoint( bp-min-width-grid() ) {
+		float: none;
+		max-width: bp-min-width-res();
+		margin-top: 0;
+		margin-right: auto;
+		margin-left: auto;
+		border: none;
+	}
+}

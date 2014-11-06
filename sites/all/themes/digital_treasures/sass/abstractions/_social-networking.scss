@@ -1,0 +1,17 @@
+
+%tel-link {
+
+	color: $alpha-color;
+
+	.l-region--header & {
+
+		$padding-top-bottom: rhythm( .12, $sm-base-font-size );
+		$padding-left-right: rhythm( .25, $sm-base-font-size );
+		display: inline-block;
+		padding: $padding-top-bottom $padding-left-right;
+		background: linear-gradient(lighten( $alpha-color, 10 ),$alpha-color);
+		//			@include border-radius( 10px );
+		color: #ffffff;
+		@include text-shadow( 1px 1px 0 darken( $alpha-color, 10 ) ) ;
+	}
+}

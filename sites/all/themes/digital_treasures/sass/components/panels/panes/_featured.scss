@@ -1,0 +1,12 @@
+.pane--featured {
+
+	display: none;
+
+	@include breakpoint( $bp-features ) {
+
+		display: inline-block;
+		position: relative;
+		left: 50%;
+		@include translateX( -50% );
+	}
+}

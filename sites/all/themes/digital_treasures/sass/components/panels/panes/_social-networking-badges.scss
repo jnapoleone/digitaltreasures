@@ -1,0 +1,125 @@
+.pane--social-networking-badges {
+
+	.l-region--branding & {
+
+		display: none;
+
+		@include breakpoint( $bp-12-grid ) {
+
+			$gutter-width: gutter-span();
+			display: block;
+			position: absolute;
+			top:0;right:$gutter-width/2;
+		}
+
+		@include breakpoint( bp-min-width-grid() ) {
+
+			right: 0;
+		}
+	}
+
+	.l-region--header & {
+
+		@include breakpoint( $bp-12-grid ) {
+
+			display: none;
+		}
+	}
+
+
+	.local-tel__link,
+	.local-tel__link:link,
+	.local-tel__link:visited,
+	.local-tel__link:hover,
+	.local-tel__link:active {
+
+		@extend %tel-link;
+	}
+
+	.toll-free-tel__link,
+	.toll-free-tel__link:link,
+	.toll-free-tel__link:visited,
+	.toll-free-tel__link:hover,
+	.toll-free-tel__link:active {
+
+		@extend %tel-link;
+	}
+
+	.tel__separator {
+
+		.l-region--header & {
+
+			display: none;
+
+			@include breakpoint( $bp-social-networking-grid ) {
+
+				display: inline-block;
+			}
+		}
+	}
+
+	.toll-free-tel__link {
+
+		.l-region--header & {
+
+			display: none;
+
+			@include breakpoint( $bp-social-networking-grid ) {
+
+				display: inline-block;
+			}
+		}
+	}
+
+	.tel {
+
+		color: $alpha-color;
+
+		.l-region--branding & {
+
+			margin-bottom: rhythm( .25, $lg-base-font-size );
+		}
+
+		.l-region--header & {
+
+//			@include leader( .15, $sm-base-font-size );
+			$padding: rhythm( .25, $sm-base-font-size );
+			float: left;
+			margin-bottom: 0;
+			padding-left: $padding;
+		}
+	}
+}
+
+.social-networking-badges--block {
+
+	.l-region--header & {
+
+		@include clearfix;
+		display: table;
+		position: relative;
+		left: 50%;
+		@include trailer( 1, $sm-base-font-size );
+		@include translateX( -50% );
+	}
+}
+
+.social-networking-badges {
+
+	@include no-bullets;
+	@include inline-block-list( rhythm( .10, $lg-base-font-size ) );
+
+	.l-region--header & {
+
+		float: left
+	}
+}
+
+.social-networking-badges__link img {
+
+	.l-region--header & {
+
+		display: block;
+	}
+}
+

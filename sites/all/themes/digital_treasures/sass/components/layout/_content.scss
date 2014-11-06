@@ -1,0 +1,19 @@
+.l-content__row {
+
+}
+
+.l-content__column-first {
+
+	@include layout-at( ('grid': 12, 'gutter': .99999, 'gutter style': opposite), $bp-12-grid ) {
+
+		@include grid-span( 6, 1 );
+	}
+}
+
+.l-content__column-second {
+
+	@include layout-at( ('grid': 12, 'gutter': .99999, 'gutter style': opposite), $bp-12-grid ) {
+
+		@include grid-span( 6, 7 );
+	}
+}

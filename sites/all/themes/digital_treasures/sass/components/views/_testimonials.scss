@@ -1,0 +1,73 @@
+
+.view--testimonials {
+
+	@include float-span( 4 );
+
+	@include breakpoint( $bp-6-grid ) {
+
+		@include float-span( 6 );
+	}
+
+	@include breakpoint( $bp-12-grid ) {
+
+		@include float-span( 12 );
+	}
+
+	@include breakpoint( $bp-12-grid ) {
+		float: none;
+//		width: auto;
+//		max-height: none;
+		max-width: bp-min-width-res();
+		@include leader( 1, $lg-base-font-size );
+		@include trailer( 1, $lg-base-font-size );
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.views-row {
+		$gutter-width: gutter-span();
+//		@include trailer( 2, $sm-base-font-size );
+		padding: 0 $gutter-width;
+		border: 2px solid $alpha-color;
+		overflow: hidden;
+
+		@include breakpoint( $bp-6-grid ) {
+
+			$gutter-width: gutter-span();
+			padding: 0 $gutter-width;
+		}
+
+		@include breakpoint( $bp-12-grid ) {
+
+			$gutter-width: gutter-span();
+//			@include trailer( 2, $lg-base-font-size );
+			padding: 0 $gutter-width;
+		}
+	}
+
+	.testimonial-header {
+
+		$rhythm: rhythm( 1, $sm-base-font-size );
+		@include no-bullets;
+		$gutter-width: gutter-span();
+		margin: 0 (- $gutter-width) $rhythm (- $gutter-width);
+		padding: $rhythm 0 $rhythm $gutter-width;
+		background: lighten( $alpha-color, 50 );
+
+		@include breakpoint( $bp-6-grid ) {
+
+			$gutter-width: gutter-span();
+			margin: 0 (- $gutter-width) $rhythm (- $gutter-width);
+			padding: $rhythm 0 $rhythm $gutter-width;
+			background: lighten( $alpha-color, 50 );
+		}
+
+		@include breakpoint( $bp-12-grid ) {
+
+			$gutter-width: gutter-span();
+			margin: 0 (- $gutter-width) $rhythm (- $gutter-width);
+			padding: $rhythm 0 $rhythm $gutter-width;
+			background: lighten( $alpha-color, 50 );
+		}
+	}
+}

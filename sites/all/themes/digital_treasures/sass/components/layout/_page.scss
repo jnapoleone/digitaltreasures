@@ -1,0 +1,9 @@
+.l-page {
+	@include clearfix;
+	overflow: hidden;
+
+	@include breakpoint( $bp-max-width ) {
+
+		overflow: visible;
+	}
+}

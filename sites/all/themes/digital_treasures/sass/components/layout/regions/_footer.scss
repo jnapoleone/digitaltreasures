@@ -1,0 +1,27 @@
+.l-region--footer {
+
+//	@include breakpoint( $bp-12-grid ) {
+//
+//		max-width: bp-min-width-res();
+//		margin-right: auto;
+//		margin-left: auto;
+//	}
+//	@include layout-at( ( 'gutter style': 'fixed' ), $bp-12-grid ) {
+////	float: none;
+//		max-width: bp-min-width-res();
+////	margin-top: 0;
+//		margin-right: auto;
+//		margin-left: auto;
+////	@include trailer( 1, $lg-base-font-size );
+//		overflow: hidden;
+//	}
+
+	@include breakpoint( bp-min-width-grid() ) {
+		float: none;
+		max-width: bp-min-width-res();
+		margin-top: 0;
+		margin-right: auto;
+		margin-left: auto;
+		border: none;
+	}
+}

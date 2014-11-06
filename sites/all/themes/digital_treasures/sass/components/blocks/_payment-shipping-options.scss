@@ -1,0 +1,76 @@
+.payment-shipping-options {
+
+	@include inline-block-list();
+	.list--item {
+
+		float:left;
+		margin-right: .5em;
+	}
+
+	.paypal--item {
+
+		margin-right: 5em;
+	}
+
+}
+
+.purolator--item {
+
+	clear: left;
+
+	@include breakpoint( $bp-payment-options-one-line-grid ) {
+
+		clear: none;
+	}
+}
+
+.fedex--item {
+
+	clear: left;
+
+	@include breakpoint($bp-payment-options-two-lines-grid) {
+
+		clear: none;
+	}
+}
+.payment-shipping--image {
+	width: auto;
+	height: 35px;
+	margin-bottom: 1.5em
+}
+
+.visa--image,
+.mastercard--image,
+.paypal--image,
+.interac--image {
+
+	border-radius: 5px;
+	border: 1px solid rgba( 0,0,0,.10);
+	box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+
+.interac--image {
+	border: none;
+	border-radius: 0;
+}
+
+.payment-options {
+	display: inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX( -50% );
+}
+
+.image--payment {
+	width: auto;
+	height: 50px;
+	margin-right: .5em;
+	border-radius: 5px;
+	border: 1px solid rgba( 0,0,0,.10);
+	box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+
+.image--interac {
+	border: none;
+	border-radius: 0;
+}

@@ -1,0 +1,68 @@
+
+%n-responsive-link {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  padding: rhythm( 0.2, $sm-medium-font-size ) rhythm( 0.35, $sm-medium-font-size );
+  border: 1px solid #fff;
+  @include border-radius( 5px );
+  background-color: $gamma-color;
+  @include box-shadow( 0 0 0 2px $gamma-color);
+  color: #fff;
+  @include adjust-font-size-to( $sm-medium-font-size );
+  @include translateY( -50% );
+
+  &:link {
+    color: #fff;
+  }
+}
+
+@mixin n-responsive-link( $color: #fff, $font-size: $sm-large-font-size, $vert-padding: 0.25, $horiz-padding: 0.5, $text-shadow-color: $responsive-menu-text-shadow-color) {
+  display: block;
+  padding: rhythm( $vert-padding ) rhythm( $horiz-padding );
+
+  color: $color;
+  @include adjust-font-size-to( $font-size,1,  $sm-base-font-size );
+  letter-spacing: 0.1em;
+  @include text-shadow( 1px 1px 0 $text-shadow-color );
+
+  &:hover {
+    background-color: $responsive-menu-bg-color-hover;
+  }
+
+  &:active {
+    background-color: $responsive-menu-bg-color-active;
+  }
+}
+
+@mixin n-link ( $color: $alpha-color, $font-size: $sm-medium-font-size, $padding: initial, $text-shadow-color: #fff) {
+  padding: $padding;
+  color: $color;
+  @include adjust-font-size-to( $font-size );
+  letter-spacing: normal;
+  @include text-shadow( none );
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+}
+
+%n-borders {
+
+  border-top: 1px solid darken($gamma-color, 20 );
+
+  @include breakpoint($bp-main-menu-horiz) {
+    border-top: none;
+  }
+
+  &.last {
+    border-bottom: 1px solid darken($gamma-color, 20);
+    @include breakpoint($bp-main-menu-horiz) {
+      border-bottom: none;
+    }
+  }
+}
