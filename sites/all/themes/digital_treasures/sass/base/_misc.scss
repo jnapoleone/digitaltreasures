@@ -33,3 +33,13 @@
 	color: #ffffff;
 	@include text-shadow( 1px 1px 2px #770016 );
 }
+
+.author {
+
+	font-weight: 700;
+}
+
+.news-outlet {
+
+	color: $contrast-font-color;
+}

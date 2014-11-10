@@ -1,14 +1,15 @@
 
-$alpha-color: #c32b62;
-$beta-color: #3d51a3;
-$gamma-color: #333333;
-$delta-color: #8F8880;
+$alpha-color                      : #c32b62;
+$beta-color                       : #3d51a3;
+$gamma-color                      : #333333;
+$delta-color                      : #8F8880;
 
 $base-font-color                  : $gamma-color;
+$contrast-font-color              : #999999;
 
-$border-color: lighten( $delta-color, 35 );
+$border-color                     : lighten( $delta-color, 35 );
 
-$menu-rollover-bg-color: lighten( $delta-color, 40 );
+$menu-rollover-bg-color           : lighten( $delta-color, 40 );
 
 $responsive-menu-font-color       : #eeeeee;
 $responsive-menu-bg-color         : $delta-color;

@@ -360,6 +360,10 @@ img {
   height: 100%;
 }
 
+figcaption {
+  font-weight: 700;
+}
+
 .submitted {
   font-style: italic;
   font-size: 0.75em;
@@ -392,6 +396,14 @@ img {
   background: #c32b62;
   color: #ffffff;
   text-shadow: 1px 1px 2px #770016;
+}
+
+.author {
+  font-weight: 700;
+}
+
+.news-outlet {
+  color: #999999;
 }
 
 table {
