@@ -5,7 +5,7 @@ sites/*/settings*.php
 sites/*/files
 sites/*/private
 
-# Ignore paths that contain development/utility modules.
+# Ignore paths that are used for Development purposes
 sites/all/modules/devel
 sites/all/modules/node_clone
 sites/all/modules/node_convert
