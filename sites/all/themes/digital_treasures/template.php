@@ -6,7 +6,7 @@
  * Digital Treasures theme.
  */
 
-function napoleone_html_head_alter( &$head_elements ) {
+function digital_treasures_html_head_alter( &$head_elements ) {
 
   $head_elements['omega-viewport']['#attributes'] = array (
     'name'          => 'viewport',
