@@ -335,6 +335,31 @@ img {
   height: auto;
 }
 
+.embed-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.71429em;
+}
+@media screen and (min-width: 64em) {
+  .embed-video {
+    margin-bottom: 1.5em;
+  }
+}
+
+.embed-video iframe,
+.embed-video object,
+.embed-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .submitted {
   font-style: italic;
   font-size: 0.75em;
