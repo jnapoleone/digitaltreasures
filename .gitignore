@@ -10,3 +10,6 @@ sites/all/modules/devel
 sites/all/modules/node_clone
 sites/all/modules/node_convert
 sites/all/modules/views_bulk_operations
+sites/all/modules/features
+sites/all/modules/uuid_features
+sites/all/modules/uuid

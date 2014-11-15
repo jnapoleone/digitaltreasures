@@ -22,7 +22,8 @@ input[type="week"] {
 }
 
 .form-submit,
-.node-readmore {
+.node-readmore,
+.field--source {
 
 	padding: 0.357em 1.071em;
 	background: $beta-color;
@@ -36,7 +37,10 @@ input[type="week"] {
 	@include text-shadow( 1px 1px 0 darken( $beta-color, 10 ) );
 	outline: none;
 
-	a:link {
+	a:link,
+	a:visited,
+	a:hover,
+	a:active {
 
 		color: #ffffff;
 	}

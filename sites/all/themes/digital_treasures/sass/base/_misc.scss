@@ -42,4 +42,17 @@
 .news-outlet {
 
 	color: $contrast-font-color;
+
+	& a:link,
+	& a:visited,
+	& a:hover,
+	& a:active {
+
+		@extend .news-outlet;
+	}
+}
+
+.inline {
+
+	display: inline;
 }
