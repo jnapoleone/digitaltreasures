@@ -723,6 +723,19 @@ th.promo {
   overflow: hidden;
 }
 
+.element-invisible {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+}
+.element-invisible.element-focusable:focus {
+  position: static;
+  clip: auto;
+  overflow: visible;
+  height: auto;
+}
+
 .payment-options {
   display: inline-block;
   position: relative;
