@@ -17,6 +17,22 @@
   text-shadow: 1px 1px 0 #99224d;
 }
 
+.alpha-color {
+  color: #c32b62;
+}
+
+.beta-color {
+  color: #3d51a3;
+}
+
+.gamma-color {
+  color: #333333;
+}
+
+.delta-color {
+  color: #8F8880;
+}
+
 html {
   font-size: 87.5%;
   line-height: 1.5em;
