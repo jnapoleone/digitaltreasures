@@ -4,6 +4,12 @@ ol {
   margin-bottom: rhythm( 1, $sm-base-font-size );
   margin-left: 0;
   padding-left: 1.2em;
+
+	ul,
+	ol {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
 
 ul {
