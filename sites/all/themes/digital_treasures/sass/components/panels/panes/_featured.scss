@@ -7,6 +7,8 @@
 		display: inline-block;
 		position: relative;
 		left: 50%;
+		@include trailer( 1, $base-font-size );
 		@include translateX( -50% );
+		vertical-align: top;
 	}
 }

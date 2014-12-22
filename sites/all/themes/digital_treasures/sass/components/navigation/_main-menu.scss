@@ -96,7 +96,7 @@
 //	@include trailer( 1, $sm-base-font-size );
 	clear: both;
 	overflow: hidden;
-	@include transition( all .3s ease-out );
+//	@include transition( all .3s ease-out );
 
 	&.main-menu__expand {
 

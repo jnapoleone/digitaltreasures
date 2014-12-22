@@ -1,0 +1,5 @@
+$interface-position: 0% !default;
+$interface-spacing: 15px !default;
+$interface-repeat: no-repeat !default;
+$interface-layout: vertical;
+$interface-images: sprite-map( 'interface-images/*.png', $position: $interface-position, $spacing: $interface-spacing, $repeat: no-repeat, $layout: $interface-layout );

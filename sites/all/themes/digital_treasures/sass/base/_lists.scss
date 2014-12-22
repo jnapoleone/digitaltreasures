@@ -30,6 +30,11 @@ ul {
 
 		border-color: $alpha-color;
 	}
+
+	&.node__links {
+
+		padding-left: 0;
+	}
 }
 
 li {

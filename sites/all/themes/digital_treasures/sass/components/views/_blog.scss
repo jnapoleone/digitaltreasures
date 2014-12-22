@@ -1,7 +1,10 @@
 .view--blog {
 
+	@include clearfix;
+
 	.views-row {
 
+		@include clearfix;
 		border-bottom: 1px solid $border-color;
 	}
 }

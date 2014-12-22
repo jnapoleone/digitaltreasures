@@ -1,12 +1,12 @@
 .node--teaser {
 
-	@include trailer( 2, $sm-base-font-size );
+//	@include trailer( 1, $sm-base-font-size );
 
-	@include grid-span( 4, 1 );
+//	@include grid-span( 4, 1 );
 
 	@include breakpoint( $bp-6-grid ) {
 
-		@include grid-span( 6, 1 );
+//		@include grid-span( 6, 1 );
 	}
 
 	@include breakpoint( $bp-12-grid ) {
@@ -15,7 +15,7 @@
 		max-width: bp-min-width-res();
 		margin-top: 0;
 		margin-right: auto;
-		@include trailer( 2, $lg-base-font-size );
+//		@include trailer( 1, $lg-base-font-size );
 		margin-left: auto;
 	}
 }

@@ -1,0 +1,14 @@
+
+.pane--hero-image {
+
+	display: none;
+
+	@include breakpoint( $bp-features ) {
+
+		position: relative;
+		display: block;
+		height: 400px;
+		@include trailer( 1, $base-font-size );
+		overflow: hidden;
+	}
+}

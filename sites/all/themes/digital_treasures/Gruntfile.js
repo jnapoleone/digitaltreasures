@@ -104,6 +104,15 @@ module.exports = function (grunt) {
           }
         }]
       }
+    },
+    criticalcss: {
+      custom_options: {
+        options: {
+          url: 'http://lrwd.digitaltreasures.ca',
+          ouputfile: 'css/critical.css',
+          filename: 'css/digital-treasures.styles.css'
+        }
+      }
     }
   });
 
@@ -112,6 +121,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-shell');
+  grunt.loadNpmTasks('grunt-criticalcss');
 
   grunt.registerTask('build', [
     'uglify:dist',

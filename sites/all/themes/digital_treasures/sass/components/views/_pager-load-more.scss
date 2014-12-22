@@ -1,0 +1,20 @@
+
+.pager-load-more {
+
+	@include no-bullets;
+	padding-left: 0;
+
+	a {
+
+		display: block;
+		padding: rhythm( .5, $base-font-size );
+		background-color: $alpha-color;
+		background: linear-gradient( $alpha-color, darken( $alpha-color, 10) );
+		color: #ffffff;
+		border-top: 1px solid darken( $alpha-color, 5 );
+		border-right: 1px solid darken( $alpha-color, 20 );
+		border-bottom: 1px solid darken( $alpha-color, 20 );
+		border-left: 1px solid darken( $alpha-color, 5 );
+		text-align: center;
+	}
+}

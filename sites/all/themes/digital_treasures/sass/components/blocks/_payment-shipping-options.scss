@@ -1,76 +1,121 @@
+//$interface-images: sprite-map( "interface-images/*.png" );
+//$interface-images-width: sprite-width( $interface-images );
+//$interface-images-height: sprite-height( $interface-images );
+
 .payment-shipping-options {
 
+	max-width: 323px;
 	@include inline-block-list();
-	.list--item {
+	margin-right: auto;
+	margin-left: auto;
 
-		float:left;
-		margin-right: .5em;
+	text-align: center;
+	@include breakpoint( $bp-payment-shipping-options-inline ) {
+
+		max-width: 100%;
+		text-align: justify;
 	}
 
-	.paypal--item {
+	&:after {
 
-		margin-right: 5em;
-	}
+		@include breakpoint( $bp-payment-shipping-options-inline ) {
 
-}
-
-.purolator--item {
-
-	clear: left;
-
-	@include breakpoint( $bp-payment-options-one-line-grid ) {
-
-		clear: none;
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
 	}
 }
 
-.fedex--item {
+.list-item--payment,
+.list-item--shipping {
 
-	clear: left;
-
-	@include breakpoint($bp-payment-options-two-lines-grid) {
-
-		clear: none;
-	}
-}
-.payment-shipping--image {
-	width: auto;
-	height: 35px;
-	margin-bottom: 1.5em
-}
-
-.visa--image,
-.mastercard--image,
-.paypal--image,
-.interac--image {
-
-	border-radius: 5px;
-	border: 1px solid rgba( 0,0,0,.10);
-	box-shadow: 1px 1px 2px rgba(0,0,0,.5);
-}
-
-.interac--image {
-	border: none;
-	border-radius: 0;
-}
-
-.payment-options {
-	display: inline-block;
 	position: relative;
-	left: 50%;
-	transform: translateX( -50% );
+	@include trailer( 1, $base-font-size );
+	margin-right: rhythm( .5, $base-font-size );
+
+	@include breakpoint( $bp-payment-shipping-options-inline ) {
+
+		margin-bottom: 0;
+	}
 }
 
-.image--payment {
-	width: auto;
-	height: 50px;
-	margin-right: .5em;
-	border-radius: 5px;
-	border: 1px solid rgba( 0,0,0,.10);
-	box-shadow: 1px 1px 2px rgba(0,0,0,.5);
+.list-item--payment {
 }
 
-.image--interac {
-	border: none;
-	border-radius: 0;
+.list-item--interac {
+	width: image-width( sprite-file( $interface-images, interac ) );
+	height: image-height( sprite-file( $interface-images, interac ) );
+	background: sprite( $interface-images, interac, 0, 0, true) no-repeat;
+//	background-size: 100%;
+}
+
+.list-item--visa {
+	width: image-width( sprite-file( $interface-images, visa ) );
+	height: image-height( sprite-file( $interface-images, visa ) );
+	background: sprite( $interface-images, visa, 0, 0, true) no-repeat;
+//	background-size: 100%;
+}
+
+.list-item--mastercard {
+
+	width: image-width( sprite-file( $interface-images, mastercard ) );
+	height: image-height( sprite-file( $interface-images, mastercard ) );
+	background: sprite( $interface-images, mastercard, 0, 0, true) no-repeat;
+//	background-size: 100%;
+}
+
+.list-item--paypal {
+	width: image-width( sprite-file( $interface-images, paypal ) );
+	height: image-height( sprite-file( $interface-images, paypal ) );
+	background: sprite( $interface-images, paypal, 0, 0, true) no-repeat;
+//	background-size: 100%;
+
+	@include breakpoint( $bp-paypal-right-margin-increase ) {
+
+		margin-right: 10%;
+	}
+}
+
+.list-item--shipping {
+}
+
+.list-item--purolator {
+
+	width: image-width( sprite-file( $interface-images, purolator-logo ) );
+	height: image-height( sprite-file( $interface-images, purolator-logo ) );
+	background: sprite( $interface-images, purolator-logo, 0, 0, true) no-repeat;
+}
+
+.list-item--ups {
+	width: image-width( sprite-file( $interface-images, ups-logo ) );
+	height: image-height( sprite-file( $interface-images, ups-logo ) );
+	background: sprite( $interface-images, ups-logo, 0, 0, true) no-repeat;
+}
+
+.list-item--fedex {
+	width: image-width( sprite-file( $interface-images, fedex-logo ) );
+	height: image-height( sprite-file( $interface-images, fedex-logo ) );
+	background: sprite( $interface-images, fedex-logo, 0, 0, true) no-repeat;
+
+	@include breakpoint( $bp-fedex-margin-zero ) {
+
+		margin-right: 0;
+	}
+
+	@include breakpoint( $bp-payment-shipping-options-inline ) {
+
+		margin-right: rhythm( .5, $base-font-size );
+	}
+}
+
+.list-item--canada-post {
+	width: image-width( sprite-file( $interface-images, canada-post-logo ) );
+	height: image-height( sprite-file( $interface-images, canada-post-logo ) );
+	background: sprite( $interface-images, canada-post-logo, 0, 0, true) no-repeat;
+
+	@include breakpoint( $bp-payment-shipping-options-inline ) {
+
+		margin-right: 0;
+	}
 }

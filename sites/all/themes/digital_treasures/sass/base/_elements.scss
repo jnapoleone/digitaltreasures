@@ -1,15 +1,14 @@
-//$base-line-height: 26px;
-//$base-font-size: $sm-base-font-size;
 @include establish-baseline($sm-base-font-size);
 @include breakpoint($bp-12-grid) {
-//	$base-font-size: $lg-base-font-size;
-//  $base-line-height: 24px;
-//	@include adjust-leading-to( 1, $lg-base-font-size );
   @include establish-baseline($lg-base-font-size);
 }
 
 body {
 	@include adjust-leading-to( 1.2, $sm-base-font-size );
+	@include content-fade-in(2s);
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: normal;
 	@include breakpoint($bp-12-grid) {
 
 		@include adjust-leading-to( 1, $lg-base-font-size );
@@ -49,6 +48,9 @@ h2,
 h3,
 h4 {
   margin-top: 0;
+	font-family: Cinzel;
+	font-style: normal;
+	font-weight: 700;
 	color: $beta-color;
 
 	a & {
@@ -137,4 +139,30 @@ address {
 
 	font-style: normal;
 	font-weight: 700;
+}
+
+b,
+strong {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: bold;
+	
+	i,
+	em {
+		font-style: italic;
+		font-weight: bold;
+	}
+}
+
+i,
+em {
+	font-family: 'Open Sans';
+	font-style: italic;
+	font-weight: normal;
+	
+	b,
+	strong {
+		font-style: italic;
+		font-weight: bold;
+	}
 }

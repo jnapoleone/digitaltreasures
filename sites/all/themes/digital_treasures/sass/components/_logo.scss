@@ -3,16 +3,18 @@
 #logo {
 
 
-	$padding-horiz: rhythm( .5, $sm-base-font-size );
-	$padding-vert: rhythm( .33333, $sm-base-font-size );
+	$padding: rhythm( .5, $sm-base-font-size );
+//	$padding-horiz: rhythm( .5, $sm-base-font-size );
+//	$padding-vert: rhythm( .33333, $sm-base-font-size );
 	display: block;
-	padding: $padding-vert $padding-horiz 0;
+	padding: $padding;
 
 	@include breakpoint( $bp-menu-resp-small-res ) {
 
 		position: absolute;
 		top: 0; bottom: 0;
 		width: 50%;
+//		padding-left: 0;
 	}
 
 	@include breakpoint( $bp-12-grid ) {
@@ -33,15 +35,15 @@
 			$gutter-width: gutter-span();
 			position: absolute;
 			top: 50%;
-			max-height: 90%;
-			padding-left: $gutter-width/2;
+//			max-height: 90%;
+//			padding-left: $gutter-width/2;
 			@include translateY( -50% );
 		}
 
 		@include breakpoint( $bp-6-grid ) {
 
-				$gutter-width: gutter-span();
-				padding-left: $gutter-width;
+//				$gutter-width: gutter-span();
+//				padding-left: $gutter-width;
 		}
 
 		@include breakpoint($bp-12-grid) {

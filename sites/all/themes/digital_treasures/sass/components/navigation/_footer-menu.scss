@@ -3,9 +3,15 @@
 	@include trailer( 1, $sm-base-font-size );
 	@include padding-leader( 1, $sm-base-font-size );
 	@include padding-trailer( 1, $sm-base-font-size );
+	@include grid-span( 4, 1 );
 	border-top: 1px solid $border-color;
 	border-bottom: 1px solid $border-color;
 	overflow: hidden;
+
+	@include breakpoint( $bp-6-grid ) {
+
+		@include grid-span( 6, 1 );
+	}
 
 	@include breakpoint( $bp-12-grid ) {
 
@@ -31,17 +37,16 @@
 		padding-left: 0;
 		overflow: hidden;
 
-		img {
-
-			width: 100%;
-			height: auto;
-			@include trailer(.25, $sm-base-font-size);
-			border: 1px solid $border-color;
-
-			@include breakpoint( $bp-12-grid ) {
-				@include trailer(.25, $lg-base-font-size);
-			}
-		}
+//		img {
+//
+//			width: 100%;
+//			height: auto;
+//			@include trailer(.25, $sm-base-font-size);
+//
+//			@include breakpoint( $bp-12-grid ) {
+//				@include trailer(.25, $lg-base-font-size);
+//			}
+//		}
 
 		.menu--title {
 
@@ -56,14 +61,17 @@
 
 		li:first-child {
 
-			@include float-span(2);
+			@include layout( ('grid': 12, 'gutter': 1, 'gutter style': 'opposite') ) {
 
-			@include breakpoint($bp-6-grid) {
-
-				@include float-span(2);
+				@include float-span(6);
 			}
 
-			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+			@include layout-at( ( 'grid': 12, 'gutter': .5, 'gutter style': 'oppposite' ), $bp-6-grid) {
+
+				@include float-span(4);
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'oppposite' ), $bp-footer-menu-inline ) {
 
 				@include float-span( 2 );
 			}
@@ -91,14 +99,18 @@
 
 		li:nth-child(2){
 
-			@include float-span(2);
+			@include layout( ('grid': 12, 'gutter': 1, 'gutter style': 'opposite') ) {
 
-			@include breakpoint($bp-6-grid) {
-
-				@include float-span(2);
+				@include float-span(6);
+				margin-right: 0;
 			}
 
-			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+			@include layout-at( ( 'grid': 12, 'gutter': .5, 'gutter style': 'oppposite' ), $bp-6-grid) {
+
+				@include float-span(4);
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'oppposite' ), $bp-footer-menu-inline ) {
 
 				@include float-span( 2 );
 			}
@@ -126,14 +138,18 @@
 
 		li:nth-child(3){
 
-			@include float-span(2);
+			@include layout( ('grid': 12, 'gutter': 1, 'gutter style': 'opposite') ) {
 
-			@include breakpoint($bp-6-grid) {
-
-				@include float-span(2);
+				@include float-span(6);
 			}
 
-			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+			@include layout-at( ( 'grid': 12, 'gutter': .5, 'gutter style': 'oppposite' ), $bp-6-grid) {
+
+				@include float-span(4);
+				margin-right: 0;
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'oppposite' ), $bp-footer-menu-inline ) {
 
 				@include float-span( 2 );
 			}
@@ -156,14 +172,19 @@
 
 		li:nth-child(4){
 
-			@include float-span(2);
+			@include layout( ('grid': 12, 'gutter': 1, 'gutter style': 'opposite') ) {
 
-			@include breakpoint($bp-6-grid) {
-
-				@include float-span(2);
+				@include float-span(6);
+				margin-right: 0;
 			}
 
-			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+			@include layout-at( ( 'grid': 12, 'gutter': .5, 'gutter style': 'oppposite' ), $bp-6-grid) {
+
+				@include float-span(4);
+				clear: left;
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'oppposite' ), $bp-footer-menu-inline ) {
 
 				@include float-span( 2 );
 			}
@@ -192,14 +213,17 @@
 
 		li:nth-child(5){
 
-			@include float-span(2);
+			@include layout( ('grid': 12, 'gutter': 1, 'gutter style': 'opposite') ) {
 
-			@include breakpoint($bp-6-grid) {
-
-				@include float-span(2);
+				@include float-span(6);
 			}
 
-			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+			@include layout-at( ( 'grid': 12, 'gutter': .5, 'gutter style': 'oppposite' ), $bp-6-grid) {
+
+				@include float-span(4);
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'oppposite' ), $bp-footer-menu-inline ) {
 
 				@include float-span( 2 );
 			}
@@ -223,14 +247,19 @@
 
 		li:nth-child(6) {
 
-			@include float-span(2);
+			@include layout( ('grid': 12, 'gutter': 1, 'gutter style': 'opposite') ) {
 
-			@include breakpoint($bp-6-grid) {
-
-				@include float-span(2);
+				@include float-span(6);
+				margin-right: 0;
 			}
 
-			@include layout-at( ( 'grid': 12, 'gutter style': 'opposite' ), $bp-footer-menu-inline ) {
+			@include layout-at( ( 'grid': 12, 'gutter': .5, 'gutter style': 'oppposite' ), $bp-6-grid) {
+
+				@include float-span(4);
+				margin-right: 0;
+			}
+
+			@include layout-at( ( 'grid': 12, 'gutter style': 'oppposite' ), $bp-footer-menu-inline ) {
 
 				@include float-span( 2 );
 				margin-right: 0;
@@ -255,5 +284,47 @@
 			}
 		}
 	}
+}
 
+.footer-menu__link {
+
+	display: block;
+	@include intrinsic-ratio(1/1);
+	@include trailer(1, $lg-base-font-size);
+	border: 1px solid $border-color;
+}
+
+.video-to-digital__link {
+	background: sprite( $interface-images, video-to-digital, 0, 0, true) no-repeat;
+	background-size: 100%;
+}
+
+.film-to-digital__link {
+
+	background: sprite( $interface-images, film-to-digital, 0, 0, true) no-repeat;
+	background-size: 101%;
+}
+
+.photo-album-scanning__link {
+
+	background: sprite( $interface-images, photo-album-scanning, 0, 0, true) no-repeat;
+	background-size: 100%;
+}
+
+.slide-scanning__link {
+
+	background: sprite( $interface-images, slide-scanning, 0, 0, true) no-repeat;
+	background-size: 100%;
+}
+
+.need-to-know__link {
+
+	background: sprite( $interface-images, need-to-know, 0, 0, true) no-repeat;
+	background-size: 100%;
+}
+
+.contact-us__link {
+
+	background: sprite( $interface-images, contact-us, 0, 0, true) no-repeat;
+	background-size: 100%;
 }

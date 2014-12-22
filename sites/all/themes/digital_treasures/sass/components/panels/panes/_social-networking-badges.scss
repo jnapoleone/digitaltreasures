@@ -74,6 +74,7 @@
 	.tel {
 
 		color: $alpha-color;
+		text-align: center;
 
 		.l-region--branding & {
 
@@ -107,12 +108,39 @@
 .social-networking-badges {
 
 	@include no-bullets;
-	@include inline-block-list( rhythm( .10, $lg-base-font-size ) );
+	@include inline-block-list( 0 );
+	text-align: center;
+
+	li {
+
+		position: relative;
+		width: 32px;
+		height: 32px;
+		margin-left: rhythm( .2, $lg-base-font-size );
+		margin-right: rhythm( .2, $lg-base-font-size );
+
+		&:first-of-type {
+
+			margin-left: 0;
+		}
+
+		&:last-of-type {
+
+			margin-right: 0;
+		}
+	}
 
 	.l-region--header & {
 
 		float: left
 	}
+}
+
+.social-networking-badges__link {
+
+	display: block;
+	width: image-width( sprite-file( $interface-images, 'facebook' ) );
+	height: image-height( sprite-file( $interface-images, 'facebook' ) );
 }
 
 .social-networking-badges__link img {
@@ -121,5 +149,20 @@
 
 		display: block;
 	}
+}
+
+.interface-images-facebook {
+
+	background: sprite( $interface-images, facebook, 0, 0, true ) no-repeat;
+}
+
+.interface-images-twitter {
+
+	background: sprite( $interface-images, twitter, 0, 0, true ) no-repeat;
+}
+
+.interface-images-pinterest {
+
+	background: sprite( $interface-images, pinterest, 0, 0, true ) no-repeat;
 }
 

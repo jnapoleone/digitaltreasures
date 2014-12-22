@@ -17,9 +17,13 @@ $bp-dt-leads-input-float-res : 600px;
 
 $bp-pricing-table-swipe-res  : 750px;
 
-$bp-payment-options-two-lines-res: 458px;
+$bp-payment-shipping-options-inline-res : 779px;
 
-$bp-payment-options-one-line-res: 755px;
+$bp-paypal-right-margin-increase-res: 1050px;
+
+$bp-fedex-margin-zero-res: 344px;
+
+$bp-readmore-link-inline-block-res: 600px;
 
 $bp-6-grid                   : 'screen' $bp-6-res;
 $bp-12-grid                  : 'screen' $bp-12-res;
@@ -44,6 +48,10 @@ $bp-dt-leads-input-float-grid: 'screen' $bp-dt-leads-input-float-res;
 
 $bp-pricing-table-swipe-grid : 'screen' $bp-pricing-table-swipe-res;
 
-$bp-payment-options-two-lines-grid: 'screen' $bp-payment-options-two-lines-res;
+$bp-readmore-link-inline-block: 'screen' $bp-readmore-link-inline-block-res;
 
-$bp-payment-options-one-line-grid: 'screen' $bp-payment-options-one-line-res;
+$bp-payment-shipping-options-inline: 'screen' $bp-payment-shipping-options-inline-res;
+
+$bp-paypal-right-margin-increase: 'screen' $bp-paypal-right-margin-increase-res;
+
+$bp-fedex-margin-zero: 'screen' $bp-fedex-margin-zero-res;

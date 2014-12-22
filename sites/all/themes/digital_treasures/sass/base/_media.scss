@@ -1,9 +1,16 @@
 img {
-  max-width: 100%;
-  height: auto;
-}
 
-.embed-video { 
+	vertical-align: top;
+
+	.pane--hero-image & {
+
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		@include translateY( -50% );
+	}
+}
+.embed-video {
 	position: relative; 
 	padding-bottom: 56.25%; 
 	height: 0; 

@@ -1,59 +1,168 @@
+//.vendor-logos--list {
+//
+//	@include no-bullets;
+//	margin-top: 0;
+//	padding-left: 0;
+//	overflow: hidden;
+//
+//	.list--item {
+//
+////		img {
+////			display: block;
+////			margin: 0 auto;
+////		}
+//	}
+//
+//	@include layout( $gutter-style: 'fixed' ) {
+//
+//		li {
+//
+//			@include float-span( 2 );
+//		}
+//
+//		li:nth-child( odd ) {
+//			clear: left;
+//		}
+//	}
+//
+//	@include layout-at( ( 'grid': 4, 'gutter style': 'fixed'), $bp-6-grid ) {
+//
+//		li {
+//
+//			@include float-span( 1 );
+//		}
+//
+//		li:nth-child( odd ) {
+//			clear: none;
+//		}
+//
+//		li:nth-child( 5 ) {
+//			clear: left;
+//		}
+//	}
+//
+//	@include layout-at( ( 'grid': 8, 'gutter style': 'fixed'), $bp-vendor-logos ) {
+//
+//		li {
+//
+//			@include float-span( 1 );
+//		}
+//
+//		li:nth-child( odd ) {
+//			clear: none;
+//		}
+//
+//		li:nth-child( 5 ) {
+//			clear: none;
+//		}
+//	}
+//}
+
 .vendor-logos--list {
 
+	display: block;
+	width: 100%;
 	@include no-bullets;
-	margin-top: 0;
-	padding-left: 0;
-	overflow: hidden;
+	@include inline-block-list;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+
+	@include breakpoint( 1024px ) {
+
+		text-align: justify;
+	}
+
+	&:after {
+
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
 
 	.list--item {
 
-		img {
-			display: block;
-			margin: 0 auto;
+		margin-right: 2%;
+		margin-left: 2%;
+
+		@include breakpoint(  634px ) {
+
+			margin-right: 4%;
+			margin-left: 4%;
+		}
+
+		@include breakpoint( 940px ) {
+
+			margin-right: 5%;
+			margin-left: 5%;
+		}
+
+		@include breakpoint( 951px ) {
+
+			margin-right: 6%;
+			margin-left: 6%;
+		}
+
+		@include breakpoint( 1024px ) {
+
+			margin-right: 0;
+			margin-left: 0;
 		}
 	}
+}
 
-	@include layout( $gutter-style: 'fixed' ) {
+.interface-images-adobe {
 
-		li {
+	background: sprite( $interface-images, adobe, 0, 0, true );
+	width: image-width( sprite-file( $interface-images, 'adobe' ) );
+	height: image-height( sprite-file( $interface-images, 'adobe' ) );
+}
 
-			@include float-span( 2 );
-		}
+.interface-images-apple {
 
-		li:nth-child( odd ) {
-			clear: left;
-		}
-	}
+	background: sprite( $interface-images, apple, 0, 0, true );
+	width: image-width( sprite-file( $interface-images, 'apple' ) );
+	height: image-height( sprite-file( $interface-images, 'apple' ) );
+}
 
-	@include layout-at( ( 'grid': 4, 'gutter style': 'fixed'), $bp-6-grid ) {
+.interface-images-dell {
 
-		li {
+	background: sprite( $interface-images, dell, 0, 0, true );
+	width: image-width( sprite-file( $interface-images, 'dell' ) );
+	height: image-height( sprite-file( $interface-images, 'dell' ) );
+}
 
-			@include float-span( 1 );
-		}
+.interface-images-epson {
 
-		li:nth-child( odd ) {
-			clear: none;
-		}
+	background: sprite( $interface-images, epson, 0, 0, true );
+	width: image-width( sprite-file( $interface-images, 'epson' ) );
+	height: image-height( sprite-file( $interface-images, 'epson' ) );
+}
 
-		li:nth-child( 5 ) {
-			clear: left;
-		}
-	}
+.interface-images-sandisk {
 
-	@include layout-at( ( 'grid': 8, 'gutter style': 'fixed'), $bp-vendor-logos ) {
+	background: sprite( $interface-images, sandisk, 0, 0, true );
+	width: image-width( sprite-file( $interface-images, 'sandisk' ) );
+	height: image-height( sprite-file( $interface-images, 'sandisk' ) );
+}
 
-		li {
+.interface-images-verbatim {
 
-			@include float-span( 1 );
-		}
+	background: sprite( $interface-images, verbatim, 0, 0, true );
+	width: image-width( sprite-file( $interface-images, 'verbatim' ) );
+	height: image-height( sprite-file( $interface-images, 'verbatim' ) );
+}
 
-		li:nth-child( odd ) {
-			clear: none;
-		}
+.interface-images-western-digital {
 
-		li:nth-child( 5 ) {
-			clear: none;
-		}
-	}
+	background: sprite( $interface-images, western-digital, 0, 0, true );
+	width: image-width( sprite-file( $interface-images, 'western-digital' ) );
+	height: image-height( sprite-file( $interface-images, 'western-digital' ) );
+}
+
+.interface-images-blackmagic {
+
+	background: sprite( $interface-images, blackmagic , 0, 0, true );
+	width: image-width( sprite-file( $interface-images, 'blackmagic' ) );
+	height: image-height( sprite-file( $interface-images, 'blackmagic' ) );
 }
