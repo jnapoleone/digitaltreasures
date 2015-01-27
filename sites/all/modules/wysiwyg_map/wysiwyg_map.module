@@ -103,7 +103,7 @@ function wysiwyg_map_tokenbuilder_form($form, &$form_state) {
 function wysiwyg_map_form_alter(&$form, &$form_state, $form_id) {
   if ((isset($form['#node_edit_form']) && $form['#node_edit_form']) || $form_id == 'block_add_block_form') {
     drupal_add_css(drupal_get_path('module', 'wysiwyg_map') . '/wysiwyg_plugins/wysiwyg_map_tokenbuilder/wysiwyg_map_tokenbuilder.css');
-    drupal_add_js('http://maps.googleapis.com/maps/api/js?sensor=false', 'external');
+    drupal_add_js('//maps.googleapis.com/maps/api/js?sensor=false', 'external');
     drupal_add_js(drupal_get_path('module', 'wysiwyg_map') . '/js/wysiwyg_map_edit_form.js', 'file');
     drupal_add_library('system', 'ui.dialog');
     drupal_add_library('system', 'ui.draggable');
@@ -182,7 +182,7 @@ function wysiwyg_map_filter_process($text, $filter, $format) {
   // the test as-is.
   if (path_is_admin(current_path())) { return $text; }
 
-  drupal_add_js('http://maps.googleapis.com/maps/api/js?sensor=false', 'external');
+  drupal_add_js('//maps.googleapis.com/maps/api/js?sensor=false', 'external');
 
   $out = $text;
   $matches = array();

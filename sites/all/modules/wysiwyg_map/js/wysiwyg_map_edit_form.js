@@ -64,6 +64,7 @@ function wysiwyg_map_getMap(lat, lon, zoomAmnt, mapType, css_class) {
   // Create the marker and drop it on the map.
   marker = new google.maps.Marker({
     position: latlng,
+    draggable: true,
     map: wysiwyg_map_mapTokenBuilder
   });
   // Add a click listener to the map.
@@ -77,6 +78,11 @@ function wysiwyg_map_getMap(lat, lon, zoomAmnt, mapType, css_class) {
   });
   // Add an event listener to the map to catch map type change.
   google.maps.event.addListener(wysiwyg_map_mapTokenBuilder, "maptypeid_changed", function(event) {
+    wysiwyg_map_buildToken();
+  });
+  // Add listener to detect marker drag-end
+  google.maps.event.addListener(marker, 'dragend', function(event) {
+    wysiwyg_map_mapTokenBuilder.setCenter(event.latLng);
     wysiwyg_map_buildToken();
   });
 };

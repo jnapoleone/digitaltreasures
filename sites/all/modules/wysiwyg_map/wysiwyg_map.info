@@ -5,9 +5,9 @@ package = User interface
 dependencies[] = block
 dependencies[] = wysiwyg
 
-; Information added by drupal.org packaging script on 2013-04-12
-version = "7.x-1.5"
+; Information added by Drupal.org packaging script on 2015-01-21
+version = "7.x-1.6"
 core = "7.x"
 project = "wysiwyg_map"
-datestamp = "1365795933"
+datestamp = "1421881083"
 
