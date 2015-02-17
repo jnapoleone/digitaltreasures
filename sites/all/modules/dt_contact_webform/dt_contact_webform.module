@@ -1,0 +1,63 @@
+<?php
+/**
+ * Implements hook_block_info().
+ */
+function dt_contact_webform_block_info() {
+  $blocks['dt_contact_webform'] = array(
+    'info' => t('Digital Treasures Contact Webform'),
+    'cache' => DRUPAL_NO_CACHE
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function dt_contact_webform_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+
+    case 'dt_contact_webform':
+
+      global $base_url;
+
+      // Get the node object
+      $node  = menu_get_object();
+
+      // Get the path alias for the node->nid
+      //$alias = drupal_get_path_alias( 'node/'.$node->nid );
+
+      // Set the variables for the theme hook
+      $variables = array( 'url' => $base_url , 'title' => $node->title );
+
+      // Set the block title
+      $block['subject'] = NULL; //t('For More Information');
+
+      // Set the block content
+      $block['content'] = array(
+        '#markup' => theme( 'dt_contact_webform', $variables ),
+        '#attached' => array(
+          'js' => array(
+            'https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js',
+          ),
+        )
+      );
+      break;
+  }
+  return $block;
+}
+
+function dt_contact_webform_theme( $existing, $type, $theme, $path ) {
+
+  return array(
+    'dt_contact_webform' => array(
+      'template' => 'dt-contact-webform',
+      'variables' => array(
+        'url'   => NULL,
+        'title' => NULL,
+      ),
+    ),
+  );
+}

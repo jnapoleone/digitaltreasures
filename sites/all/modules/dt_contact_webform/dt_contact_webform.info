@@ -1,0 +1,4 @@
+name = Digital Treasures Contact Webform
+description = A Contact Webform that posts to Canada Home Movies.
+core = 7.x
+package = Digital Treasures
