@@ -18,3 +18,9 @@ $responsive-menu-border-lighten   : lighten( $delta-color, 20 );
 $responsive-menu-border-darken    : darken( $delta-color, 10 );
 $responsive-menu-text-shadow-color: darken( $gamma-color, 5 );
 $responsive-menu-box-shadow-color : darken( $gamma-color, 20 );
+
+$st-patricks-green                : #019875;
+$st-patricks-bg                   : lighten($st-patricks-green, 5);
+$st-patricks-text-shadow          : darken($st-patricks-green, 10);
+$st-patricks-banner-ends          : darken($st-patricks-green, 10);
+$st-patricks-banner-fold-shadow   : darken($st-patricks-green, 10);

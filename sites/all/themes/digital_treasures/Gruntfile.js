@@ -43,16 +43,20 @@ module.exports = function (grunt) {
       options: {
         config: 'config.rb',
         bundleExec: true,
-        force: true
+        //force: false
       },
       dev: {
         options: {
-          environment: 'development'
+          environment: 'development',
+          sourcemap: true,
+          force: false
         }
       },
       dist: {
         options: {
-          environment: 'production'
+          environment: 'production',
+          sourcemap: true,
+          force: true
         }
       }
     },
@@ -109,8 +113,10 @@ module.exports = function (grunt) {
       custom_options: {
         options: {
           url: 'http://lrwd.digitaltreasures.ca',
-          ouputfile: 'css/critical.css',
-          filename: 'css/digital-treasures.styles.css'
+          outputfile: 'css/critical.css',
+          filename: 'css/digital-treasures.styles.css',
+          width: 1200,
+          height: 500
         }
       }
     }

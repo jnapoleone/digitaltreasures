@@ -30,10 +30,10 @@
 	margin-right: - $margin;
 	margin-bottom: 0;
 	margin-left: - $margin;
-	background: #c32b62;
+	background: $st-patricks-bg; //#c32b62;
 	color: #fff;
 	text-align: center;
-	text-shadow: 1px 1px 2px #770016;
+	text-shadow: 1px 1px 2px $st-patricks-text-shadow; //#770016;
 
 	@include breakpoint( $bp-6-grid ) {
 
@@ -60,7 +60,7 @@
 			position: absolute;
 			display: block;
 			bottom: -1em;
-			border: 1.5em solid #AA1249;
+			border: 1.5em solid $st-patricks-green;//#AA1249;
 			z-index: -1;
 		}
 	}
@@ -94,7 +94,7 @@
 				position: absolute;
 				display: block;
 				border-style: solid;
-				border-color: #90002F transparent transparent transparent;
+				border-color: $st-patricks-banner-fold-shadow transparent transparent transparent;
 				bottom: -1em;
 			}
 		}
@@ -118,82 +118,3 @@
 		}
 	}
 }
-
-//.is-sticky {
-//
-//	&.promo-banner__sticky {
-//
-//		z-index: 1;
-//	}
-//
-//	.promo-banner {
-//
-//		&:before,
-//		&:after {
-//
-//			@include breakpoint( $bp-max-width ) {
-//
-//				content: "";
-//				position: static;
-//				bottom: auto;
-//				border: none;
-//				z-index: 0;
-//			}
-//		}
-//
-//		&:before {
-//
-//			@include breakpoint( $bp-max-width ) {
-//
-//				left: auto;
-//				border-right-width: 0;
-//				border-left-color: transparent;
-//			}
-//		}
-//
-//		&:after {
-//
-//			@include breakpoint( $bp-max-width ) {
-//
-//				right: auto;
-//				border-left-width: 0;
-//				border-right-color: transparent;
-//			}
-//		}
-//
-//		.promo-content {
-//
-//			&:before,
-//			&:after {
-//
-//				@include breakpoint( $bp-max-width ) {
-//
-//					content: "";
-//					position: static;
-//					display: block;
-//					border-style: none;
-//					border-color: transparent;
-//					bottom: auto;
-//				}
-//			}
-//
-//			&:before {
-//
-//				@include breakpoint( $bp-max-width ) {
-//
-//					left: auto;
-//					border-width: 0;
-//				}
-//			}
-//
-//			&:after {
-//
-//				@include breakpoint( $bp-max-width ) {
-//
-//					right: auto;
-//					border-width: 0;
-//				}
-//			}
-//		}
-//	}
-//}

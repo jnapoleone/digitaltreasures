@@ -43,5 +43,8 @@ output_style = (environment == :production) ? :expanded : :nested
 # the absolute path to the theme from the server omega.
 relative_assets = true
 
+# Conditionally enable line comments when in development mode.
+line_comments = (environment == :production) ? false : true
+
 # Output source maps in development mode.
 sass_options = (environment == :production) ? {} : {:sourcemap => true}
