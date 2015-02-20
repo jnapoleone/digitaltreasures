@@ -119,6 +119,48 @@ module.exports = function (grunt) {
           height: 500
         }
       }
+    },
+
+    uncss: {
+
+      dist: {
+
+        files: {
+
+          'css/digital-treasures.styles.tidy.css': [
+
+            'http://lrwd.digitaltreasures.ca/',
+            'http://lrwd.digitaltreasures.ca/need-know',
+            'http://lrwd.digitaltreasures.ca/custom-editing-solutions',
+            'http://lrwd.digitaltreasures.ca/testimonials',
+            'http://lrwd.digitaltreasures.ca/about-us',
+            'http://lrwd.digitaltreasures.ca/blog',
+            'http://lrwd.digitaltreasures.ca/contact-us',
+            'http://lrwd.digitaltreasures.ca/video-digital-service-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/film-digital-service-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/photos-album-scanning',
+            'http://lrwd.digitaltreasures.ca/slide-scanning-service-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/need-know',
+            'http://lrwd.digitaltreasures.ca/8mm-dvd-conversion-services-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/16mm-dvd-conversion-service-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/adat-digital-conversion-service-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/audio-digital',
+            'http://lrwd.digitaltreasures.ca/betacamsp-conversion-service-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/betacamsx-dvd-conversion-services-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/betamax-dvd-conversion-services-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/compact-cassette-digital-conversion-service-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/dat-digital-conversion-service-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/digital8-dvd-conversion-services-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/digital-betacam-conversion-service-toronto',
+            'http://lrwd.digitaltreasures.ca/dtrs-digital-conversion-service-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/dv-dvd-conversion-services-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/dvcam-conversion-company-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/dvcpro-dvd-conversion-services-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/hi8-dvd-conversion-services-toronto-gta',
+            'http://lrwd.digitaltreasures.ca/hdv-dvd-conversion-services-toronto-gta'
+          ]
+        }
+      }
     }
   });
 
@@ -128,6 +170,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-criticalcss');
+  grunt.loadNpmTasks('grunt-uncss');
 
   grunt.registerTask('build', [
     'uglify:dist',
