@@ -7,3 +7,18 @@ sites/*/private
 
 # Ignore Boost module cache content
 cache
+
+# Ignore Development modules and files
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+**/*.iws
+sites/all/modules/advagg/
+sites/all/modules/devel/
+sites/all/modules/dt_test_webform/
+sites/all/modules/minify/
+sites/all/modules/node_convert/
+sites/all/modules/views_bulk_operations/
+sites/all/themes/digital_treasures/css/critical.css
+sites/all/themes/digital_treasures/css/digital-treasures.styles.tidy.css
+sites/all/themes/digital_treasures/dist/
+sites/all/themes/digital_treasures/temp.html
