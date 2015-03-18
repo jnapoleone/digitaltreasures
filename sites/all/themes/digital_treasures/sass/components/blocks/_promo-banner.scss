@@ -30,10 +30,10 @@
 	margin-right: - $margin;
 	margin-bottom: 0;
 	margin-left: - $margin;
-	background: $st-patricks-bg; //#c32b62;
+	background: $dt-banner-bg; //#c32b62;
 	color: #fff;
 	text-align: center;
-	text-shadow: 1px 1px 2px $st-patricks-text-shadow; //#770016;
+	text-shadow: 1px 1px 2px $dt-banner-text-shadow; //#770016;
 
 	@include breakpoint( $bp-6-grid ) {
 
@@ -60,7 +60,7 @@
 			position: absolute;
 			display: block;
 			bottom: -1em;
-			border: 1.5em solid $st-patricks-green;//#AA1249;
+			border: 1.5em solid $dt-banner-pink;//#AA1249;
 			z-index: -1;
 		}
 	}
@@ -94,7 +94,7 @@
 				position: absolute;
 				display: block;
 				border-style: solid;
-				border-color: $st-patricks-banner-fold-shadow transparent transparent transparent;
+				border-color: $dt-banner-fold-shadow transparent transparent transparent;
 				bottom: -1em;
 			}
 		}

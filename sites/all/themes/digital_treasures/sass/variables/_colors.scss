@@ -24,3 +24,9 @@ $st-patricks-bg                   : lighten($st-patricks-green, 5);
 $st-patricks-text-shadow          : darken($st-patricks-green, 10);
 $st-patricks-banner-ends          : darken($st-patricks-green, 10);
 $st-patricks-banner-fold-shadow   : darken($st-patricks-green, 10);
+
+$dt-banner-pink                   : $alpha-color;
+$dt-banner-bg                     : lighten($dt-banner-pink, 5);
+$dt-banner-text-shadow            : darken($dt-banner-pink, 10);
+$dt-banner-ends                   : darken($dt-banner-pink, 10);
+$dt-banner-fold-shadow            : darken($dt-banner-pink, 10);
