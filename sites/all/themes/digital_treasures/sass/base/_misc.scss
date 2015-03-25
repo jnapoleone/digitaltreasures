@@ -31,7 +31,7 @@
 
 	background: #c32b62;
 	color: #ffffff;
-	@include text-shadow( 1px 1px 2px #770016 );
+	@include alpha-color-text-shadow;
 }
 
 .author {
@@ -55,4 +55,12 @@
 .inline {
 
 	display: inline;
+}
+
+.pill-box {
+
+	background-color: #ffffff;
+	padding: rhythm(.15) rhythm(.25);
+	border-radius: 5px;
+	font-weight: bold;
 }

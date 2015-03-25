@@ -324,6 +324,28 @@ ul.node__links {
   background: #d43d74;
 }
 
+.pricing__list--footer {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+.pricing__list--footer li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.pricing__list-item--odd,
+.pricing__list-item--even {
+  border: 1px solid #e3e1df;
+  border-top: none;
+}
+.pricing__list-item--odd p,
+.pricing__list-item--even p {
+  margin-bottom: 0;
+  padding: 0.75em;
+}
+
 img {
   vertical-align: top;
 }
@@ -380,7 +402,7 @@ figcaption {
 .promo {
   background: #c32b62;
   color: #ffffff;
-  text-shadow: 1px 1px 2px #770016;
+  text-shadow: 1px 1px 2px #5b142e;
 }
 
 .author {
@@ -393,6 +415,13 @@ figcaption {
 
 .inline {
   display: inline;
+}
+
+.pill-box {
+  background-color: #ffffff;
+  padding: 0.225em 0.375em;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 table {
@@ -484,12 +513,15 @@ th.promo {
   width: 60%;
 }
 
-.pricing-table {
+.pricing {
   overflow-x: auto;
 }
-.pricing-table .pricing-table__table {
+.pricing .pricing__table {
   width: 100%;
   white-space: nowrap;
+}
+.pricing .pricing__table.pricing__table--footer {
+  margin-bottom: 0;
 }
 
 #logo {

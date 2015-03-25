@@ -148,13 +148,38 @@ td {
 	}
 }
 
-.pricing-table {
+.pricing {
 
 	overflow-x: auto;
+	@include breakpoint(bp-min-width-res()) {
+		overflow-x: visible;
+	}
 
-	.pricing-table__table {
+	.pricing__table {
 
 		width: 100%;
 		white-space: nowrap;
+
+		&.pricing__table--footer {
+
+			margin-bottom: 0;
+		}
+
+		@include breakpoint(bp-min-width-res()) {
+
+			white-space: normal;
+		}
 	}
+
+//	th {
+//
+//		p {
+//
+//			@include breakpoint(bp-min-width-res()) {
+//
+//				margin-right: 0;
+//				margin-left: 0;
+//			}
+//		}
+//	}
 }

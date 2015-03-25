@@ -1,6 +1,6 @@
 .swipe {
 
-	@include breakpoint( $bp-pricing-table-swipe-grid ) {
+	@include breakpoint( bp-min-width-res() ) {
 
 		display: none;
 	}

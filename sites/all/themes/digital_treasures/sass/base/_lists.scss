@@ -56,3 +56,43 @@ li {
 		}
 	}
 }
+
+.pricing__list--footer {
+
+	@include no-bullets;
+	margin-top: 0;
+	padding-left: 0;
+}
+
+.pricing__list-item--odd,
+.pricing__list-item--even {
+
+	border: 1px solid $border-color;
+	border-top: none;
+	p {
+
+		margin-bottom: 0;
+		padding: rhythm(.5);
+	}
+}
+
+.pricing__list-item--odd {
+
+	p {
+
+		//background-color: lighten($alpha-color,10);
+		//color: #ffffff;
+		//@include alpha-color-text-shadow;
+	}
+}
+
+.pricing__list-item--even {
+
+	p {
+
+		//background: lighten($beta-color, 10);
+		//color: #ffffff;
+		//@include beta-color-text-shadow;
+	}
+}
+
