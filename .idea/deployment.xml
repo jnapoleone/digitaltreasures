@@ -9,6 +9,9 @@
           </mappings>
           <excludedPaths>
             <excludedPath path="sites/all/themes/digital_treasures/.sass-cache" />
+            <excludedPath local="true" path="$PROJECT_DIR$/sites/default/files/css" />
+            <excludedPath path="sites/default/files/css" />
+            <excludedPath path="cache" />
           </excludedPaths>
         </serverdata>
       </paths>

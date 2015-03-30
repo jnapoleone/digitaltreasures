@@ -523,6 +523,9 @@ th.promo {
 .pricing .pricing__table.pricing__table--footer {
   margin-bottom: 0;
 }
+.pricing td {
+  text-align: center;
+}
 
 #logo {
   display: block;

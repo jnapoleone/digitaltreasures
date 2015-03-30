@@ -666,6 +666,9 @@ th.promo {
     white-space: normal;
   }
 }
+.pricing td {
+  text-align: center;
+}
 
 #logo {
   display: block;
