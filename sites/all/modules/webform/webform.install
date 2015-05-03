@@ -2018,9 +2018,7 @@ function webform_update_7420() {
  * Set the administrator option for an HTML-capable mail system to the current automatically-detected option.
  */
 function webform_update_7421() {
-  $capable = array_reduce(array('mandrill', 'mimemail', 'htmlmail'),
-                          function($carry, $module) { return $carry || module_exists($module); },
-                          FALSE);
+  $capable = array_reduce(array('mandrill', 'mimemail', 'htmlmail'), function($carry, $module) { return $carry || module_exists($module); }, FALSE);
   variable_set('webform_email_html_capable', $capable);
   return $capable
             ? t('An HTML-capable module is installed. The option to send HTML e-mail is enabled. ')
