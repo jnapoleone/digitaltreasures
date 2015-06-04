@@ -166,3 +166,8 @@ em {
 		font-weight: bold;
 	}
 }
+
+dl {
+  margin-top: 0;
+  @include trailer(1, $lg-base-font-size);
+}

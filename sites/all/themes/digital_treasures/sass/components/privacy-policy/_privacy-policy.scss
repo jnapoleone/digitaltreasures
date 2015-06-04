@@ -1,0 +1,34 @@
+.privacy-policy {
+
+  //  padding: rhythm(1,$lg-base-font-size);
+  background-color: lighten($alpha-color, 20);
+  border-right: rhythm(.25, $lg-base-font-size) solid $alpha-color;
+  border-bottom: rhythm(.25, $lg-base-font-size) solid $alpha-color;
+  border-left: rhythm(.25, $lg-base-font-size) solid $alpha-color;
+  @include box-shadow(2px 38px 1px 1px lighten($alpha-color, 15) inset);
+  color: #ffffff;
+}
+
+.privacy-policy__title {
+
+  @include trailer(.5, $lg-base-font-size);
+  padding-left: rhythm(.5, $lg-base-font-size);
+  background-color: $alpha-color;
+  font-family: Cinzel;
+  @include adjust-font-size-to($lg-medium-font-size, 1.5);
+  font-weight: bold;
+  letter-spacing: .15em;
+  letter-spacing: .15rem;
+}
+
+.privacy-policy__definition {
+  @include trailer(.5, $lg-base-font-size);
+  margin-left: 0;
+  padding-right: rhythm(.5, $lg-base-font-size);
+  padding-left: rhythm(.5, $lg-base-font-size);
+  @include single-text-shadow(1px,1px,0,0,lighten($alpha-color, 10));
+}
+
+a.privacy-policy__button {
+  @extend .btn-pink;
+}

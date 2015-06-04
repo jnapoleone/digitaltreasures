@@ -149,3 +149,18 @@
   };
 
 })(jQuery);
+
+Drupal.behaviors.digitalTreasuresAnchorScroll = {
+    attach: function (context, settings) {
+        var height = 0;
+        window.onload  = function() {
+
+            var anchor = (window.location.hash) ? window.location.hash : false;
+
+            if(anchor) {
+                height = document.getElementById('undefined-sticky-wrapper').offsetHeight;
+                window.scrollBy(0,-height);
+            }
+        }
+    }
+};

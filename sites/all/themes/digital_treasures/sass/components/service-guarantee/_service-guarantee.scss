@@ -1,0 +1,28 @@
+.service-guarantee {
+
+  background-color: lighten($beta-color, 20);
+  border-right: rhythm(.25, $lg-base-font-size) solid $beta-color;
+  border-bottom: rhythm(.25, $lg-base-font-size) solid $beta-color;
+  border-left: rhythm(.25, $lg-base-font-size) solid $beta-color;
+  @include box-shadow(2px 38px 4px 1px lighten($beta-color, 15) inset);
+  color: #ffffff;
+}
+
+.service-guarantee__title {
+
+  @include trailer(.5, $lg-base-font-size);
+  padding-left: rhythm(.5, $lg-base-font-size);
+  background-color: $beta-color;
+  font-family: Cinzel;
+  @include adjust-font-size-to($lg-medium-font-size, 1.5);
+  font-weight: bold;
+  letter-spacing: .15em;
+  letter-spacing: .15rem;
+}
+
+.service-guarantee__definition {
+  @include trailer(.5, $lg-base-font-size);
+  padding-right: rhythm(.5, $lg-base-font-size);
+  padding-left: rhythm(.5, $lg-base-font-size);
+  @include single-text-shadow(1px,1px,0,0,lighten($beta-color, 10));
+}

@@ -64,3 +64,41 @@
 	border-radius: 5px;
 	font-weight: bold;
 }
+
+.btn-pink {
+
+  padding: 0.357em 1.071em;
+  background: $alpha-color;
+  @include background-image( linear-gradient(lighten( $alpha-color, 10 ),$alpha-color));
+  border-radius: 20px;
+  border: 1px solid $alpha-color;
+  border-bottom: 1px solid lighten( $alpha-color, 10 );
+  border-right-color: darken( $alpha-color, 10 );
+  border-left-color: darken( $alpha-color, 10 );
+  color: #ffffff;
+  @include text-shadow( 1px 1px 0 darken( $alpha-color, 10 ) );
+  outline: none;
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+
+    color: #ffffff;
+  }
+
+  &:hover {
+    @include background-image( linear-gradient( $alpha-color, lighten( $alpha-color, 10 ) ) );
+  }
+
+  &:active {
+    background: lighten( $alpha-color, 20 );
+    border-color: lighten( $alpha-color, 10 )  ;
+  }
+
+  &:disabled {
+    background:#8A9EF0;
+    border-color: #7084D6;
+    color: lighten( #ffffff, 75 );
+  }
+}
