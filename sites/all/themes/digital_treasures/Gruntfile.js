@@ -95,7 +95,7 @@ module.exports = function (grunt) {
           compress: true
         },
         files: [{
-          expand: true,
+          expand: false,
           flatten: true,
           cwd: 'js',
           dest: 'js',
