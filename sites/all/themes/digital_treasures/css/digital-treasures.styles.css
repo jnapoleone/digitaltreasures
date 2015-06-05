@@ -720,6 +720,10 @@ th.promo {
   text-align: center;
 }
 
+.ancestry-logo {
+  margin-top: 1.5em;
+}
+
 #logo {
   display: block;
   padding: 0.85714em;
