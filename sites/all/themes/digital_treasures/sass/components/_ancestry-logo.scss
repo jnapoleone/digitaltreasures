@@ -1,7 +1,7 @@
 .ancestry--cta {
 
   @include leader(2, $lg-base-font-size);
-  margin-bottom: 0;
+  @include trailer(.375, $lg-base-font-size);
   @include adjust-font-size-to($lg-small-font-size);
   text-align: center;
 }
