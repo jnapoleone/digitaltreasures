@@ -2,6 +2,6 @@
 
   @include leader(2, $lg-base-font-size);
   margin-bottom: 0;
-  @include adjust-font-size-to($sm-base-font-size);
+  @include adjust-font-size-to($lg-small-font-size);
   text-align: center;
 }
