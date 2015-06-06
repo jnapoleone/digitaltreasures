@@ -720,8 +720,12 @@ th.promo {
   text-align: center;
 }
 
-.ancestry-logo {
+.ancestry--cta {
   margin-top: 3em;
+  margin-bottom: 0;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  text-align: center;
 }
 
 #logo {
