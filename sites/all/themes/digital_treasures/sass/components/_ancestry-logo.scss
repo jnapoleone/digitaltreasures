@@ -1,4 +1,7 @@
-.ancestry-logo {
+.ancestry--cta {
 
   @include leader(2, $lg-base-font-size);
+  margin-bottom: 0;
+  @include adjust-font-size-to($sm-base-font-size);
+  text-align: center;
 }
