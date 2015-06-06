@@ -582,7 +582,7 @@ th.promo {
   margin-bottom: 0.5625em;
   font-size: 0.8125em;
   line-height: 1.84615em;
-  text-align: center;
+  font-weight: bold;
 }
 
 #logo {

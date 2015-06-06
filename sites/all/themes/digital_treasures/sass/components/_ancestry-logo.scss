@@ -3,5 +3,5 @@
   @include leader(2, $lg-base-font-size);
   @include trailer(.375, $lg-base-font-size);
   @include adjust-font-size-to($lg-small-font-size);
-  text-align: center;
+  font-weight: bold;
 }
