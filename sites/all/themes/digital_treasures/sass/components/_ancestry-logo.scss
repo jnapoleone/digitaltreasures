@@ -1,7 +1,8 @@
 .ancestry--cta {
 
   @include leader(2, $lg-base-font-size);
-  @include trailer(.375, $lg-base-font-size);
+  @include trailer(1, $lg-base-font-size);
+  color: $beta-color;
   @include adjust-font-size-to($lg-small-font-size);
   font-weight: bold;
 }
