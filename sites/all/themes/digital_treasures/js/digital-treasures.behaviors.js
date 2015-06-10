@@ -179,7 +179,7 @@
                 }
             });
 
-            $('.privacy-policy').on('click', function () {
+            $('.privacy-policy--header').on('click', function () {
                 if($('.privacy-policy').hasClass('privacy-policy--expand')) {
 
                     $('.privacy-policy').removeClass('privacy-policy--expand');

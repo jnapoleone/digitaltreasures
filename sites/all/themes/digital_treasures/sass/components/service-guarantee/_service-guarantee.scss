@@ -1,16 +1,13 @@
 .service-guarantee {
 
-  $border: rhythm(.25, $base-font-size);
   @include trailer(1, $base-font-size);
   background-color: $beta-color;
-  border-right: $border solid $beta-color;
-  border-left: $border solid $beta-color;
+}
+
+.service-guarantee--header {
+
+  @include clearfix;
   cursor: pointer;
-
-  &.service-guarantee--expand {
-
-    border-bottom: $border solid $beta-color;
-  }
 }
 
 .service-guarantee--title {
@@ -42,9 +39,8 @@
   background-color: lighten($beta-color, 20);
   color: #ffffff;
   overflow: hidden;
-//  @include single-transition(max-height, 1s);
+  @include single-transition(max-height, 1s);
   @include text-shadow(1px 1px 0 0 darken($beta-color, 10));
-  @include box-shadow(2px 2px 4px 0 lighten($beta-color, 10) inset, 1px 1px 0 0 lighten($beta-color,30));
 
   .service-guarantee--expand & {
 
@@ -55,9 +51,14 @@
 
 .service-guarantee__list {
 
+  $border: rhythm(.25, $base-font-size);
   margin: 0;
   padding-top: rhythm(1, $base-font-size);
   padding-right: rhythm(1, $base-font-size);
   padding-left: rhythm(1, $base-font-size);
+  border-right: $border solid $beta-color;
+  border-bottom: $border solid $beta-color;
+  border-left: $border solid $beta-color;
+  @include box-shadow(2px 2px 4px 0 lighten($beta-color, 10) inset, -1px -1px 0 0 lighten($beta-color,30) inset);
   @include no-bullets;
 }

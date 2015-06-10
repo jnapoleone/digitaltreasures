@@ -2964,15 +2964,15 @@ ul.inline li {
 /* line 1, ../sass/components/privacy-policy/_privacy-policy.scss */
 .privacy-policy {
   margin-bottom: 1.5em;
-  background-color: #c32b62;
-  border-right: 0.375em solid #c32b62;
-  border-left: 0.375em solid #c32b62;
-  cursor: pointer; }
-  /* line 10, ../sass/components/privacy-policy/_privacy-policy.scss */
-  .privacy-policy.privacy-policy--expand {
-    border-bottom: 0.375em solid #c32b62; }
+  background-color: #c32b62; }
 
-/* line 16, ../sass/components/privacy-policy/_privacy-policy.scss */
+/* line 7, ../sass/components/privacy-policy/_privacy-policy.scss */
+.privacy-policy--header {
+  overflow: hidden;
+  *zoom: 1;
+  cursor: pointer; }
+
+/* line 13, ../sass/components/privacy-policy/_privacy-policy.scss */
 .privacy-policy--title {
   float: left;
   padding-left: 1.125em;
@@ -2981,38 +2981,45 @@ ul.inline li {
   font-family: Cinzel;
   color: #ffffff; }
 
-/* line 25, ../sass/components/privacy-policy/_privacy-policy.scss */
+/* line 22, ../sass/components/privacy-policy/_privacy-policy.scss */
 .privacy-policy--toggle {
   float: right;
   padding-right: 1.125em;
   line-height: 2.25em;
   color: #ffffff; }
-  /* line 32, ../sass/components/privacy-policy/_privacy-policy.scss */
+  /* line 29, ../sass/components/privacy-policy/_privacy-policy.scss */
   .privacy-policy--toggle .material-icons {
     vertical-align: middle; }
 
-/* line 38, ../sass/components/privacy-policy/_privacy-policy.scss */
+/* line 35, ../sass/components/privacy-policy/_privacy-policy.scss */
 .privacy-policy--content {
   max-height: 0;
   clear: both;
   background-color: #e0749b;
   color: #ffffff;
   overflow: hidden;
+  -moz-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s;
   text-shadow: 1px 1px 0 #99224d;
-  text-shadow: 1px 1px 0 0 #99224d;
-  -moz-box-shadow: 2px 2px 4px 0 #d74a7d inset, 1px 1px 0 0 #ea9db9;
-  -webkit-box-shadow: 2px 2px 4px 0 #d74a7d inset, 1px 1px 0 0 #ea9db9;
-  box-shadow: 2px 2px 4px 0 #d74a7d inset, 1px 1px 0 0 #ea9db9; }
-  /* line 49, ../sass/components/privacy-policy/_privacy-policy.scss */
+  text-shadow: 1px 1px 0 0 #99224d; }
+  /* line 45, ../sass/components/privacy-policy/_privacy-policy.scss */
   .privacy-policy--expand .privacy-policy--content {
     max-height: 999px; }
 
-/* line 56, ../sass/components/privacy-policy/_privacy-policy.scss */
+/* line 52, ../sass/components/privacy-policy/_privacy-policy.scss */
 .privacy-policy__list {
   margin: 0;
   padding-top: 1.5em;
   padding-right: 1.5em;
   padding-left: 1.5em;
+  border-right: 0.375em solid #c32b62;
+  border-bottom: 0.375em solid #c32b62;
+  border-left: 0.375em solid #c32b62;
+  -moz-box-shadow: 2px 2px 4px 0 #d74a7d inset, -1px -1px 0 0 #ea9db9 inset;
+  -webkit-box-shadow: 2px 2px 4px 0 #d74a7d inset, -1px -1px 0 0 #ea9db9 inset;
+  box-shadow: 2px 2px 4px 0 #d74a7d inset, -1px -1px 0 0 #ea9db9 inset;
   list-style: none; }
   /* line 11, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p551@omega.digital_treasures/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
   .privacy-policy__list li {
@@ -3020,7 +3027,7 @@ ul.inline li {
     list-style-type: none;
     margin-left: 0; }
 
-/* line 71, ../sass/components/privacy-policy/_privacy-policy.scss */
+/* line 72, ../sass/components/privacy-policy/_privacy-policy.scss */
 a:link.privacy-policy__button,
 a:visited.privacy-policy__button,
 a:hover.privacy-policy__button,
@@ -3030,15 +3037,15 @@ a:active.privacy-policy__button {
 /* line 1, ../sass/components/service-guarantee/_service-guarantee.scss */
 .service-guarantee {
   margin-bottom: 1.5em;
-  background-color: #3d51a3;
-  border-right: 0.375em solid #3d51a3;
-  border-left: 0.375em solid #3d51a3;
-  cursor: pointer; }
-  /* line 10, ../sass/components/service-guarantee/_service-guarantee.scss */
-  .service-guarantee.service-guarantee--expand {
-    border-bottom: 0.375em solid #3d51a3; }
+  background-color: #3d51a3; }
 
-/* line 16, ../sass/components/service-guarantee/_service-guarantee.scss */
+/* line 7, ../sass/components/service-guarantee/_service-guarantee.scss */
+.service-guarantee--header {
+  overflow: hidden;
+  *zoom: 1;
+  cursor: pointer; }
+
+/* line 13, ../sass/components/service-guarantee/_service-guarantee.scss */
 .service-guarantee--title {
   float: left;
   padding-left: 1.125em;
@@ -3047,38 +3054,45 @@ a:active.privacy-policy__button {
   font-family: Cinzel;
   color: #ffffff; }
 
-/* line 25, ../sass/components/service-guarantee/_service-guarantee.scss */
+/* line 22, ../sass/components/service-guarantee/_service-guarantee.scss */
 .service-guarantee--toggle {
   float: right;
   padding-right: 1.125em;
   line-height: 2.25em;
   color: #ffffff; }
-  /* line 32, ../sass/components/service-guarantee/_service-guarantee.scss */
+  /* line 29, ../sass/components/service-guarantee/_service-guarantee.scss */
   .service-guarantee--toggle .material-icons {
     vertical-align: middle; }
 
-/* line 38, ../sass/components/service-guarantee/_service-guarantee.scss */
+/* line 35, ../sass/components/service-guarantee/_service-guarantee.scss */
 .service-guarantee--content {
   max-height: 0;
   clear: both;
   background-color: #798acd;
   color: #ffffff;
   overflow: hidden;
+  -moz-transition: max-height 1s;
+  -o-transition: max-height 1s;
+  -webkit-transition: max-height 1s;
+  transition: max-height 1s;
   text-shadow: 1px 1px 0 #2f3f7e;
-  text-shadow: 1px 1px 0 0 #2f3f7e;
-  -moz-box-shadow: 2px 2px 4px 0 #5469bf inset, 1px 1px 0 0 #9eaadb;
-  -webkit-box-shadow: 2px 2px 4px 0 #5469bf inset, 1px 1px 0 0 #9eaadb;
-  box-shadow: 2px 2px 4px 0 #5469bf inset, 1px 1px 0 0 #9eaadb; }
-  /* line 49, ../sass/components/service-guarantee/_service-guarantee.scss */
+  text-shadow: 1px 1px 0 0 #2f3f7e; }
+  /* line 45, ../sass/components/service-guarantee/_service-guarantee.scss */
   .service-guarantee--expand .service-guarantee--content {
     max-height: 999px; }
 
-/* line 56, ../sass/components/service-guarantee/_service-guarantee.scss */
+/* line 52, ../sass/components/service-guarantee/_service-guarantee.scss */
 .service-guarantee__list {
   margin: 0;
   padding-top: 1.5em;
   padding-right: 1.5em;
   padding-left: 1.5em;
+  border-right: 0.375em solid #3d51a3;
+  border-bottom: 0.375em solid #3d51a3;
+  border-left: 0.375em solid #3d51a3;
+  -moz-box-shadow: 2px 2px 4px 0 #5469bf inset, -1px -1px 0 0 #9eaadb inset;
+  -webkit-box-shadow: 2px 2px 4px 0 #5469bf inset, -1px -1px 0 0 #9eaadb inset;
+  box-shadow: 2px 2px 4px 0 #5469bf inset, -1px -1px 0 0 #9eaadb inset;
   list-style: none; }
   /* line 11, ../../../../../../../../usr/local/rvm/gems/ruby-1.9.3-p551@omega.digital_treasures/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_bullets.scss */
   .service-guarantee__list li {

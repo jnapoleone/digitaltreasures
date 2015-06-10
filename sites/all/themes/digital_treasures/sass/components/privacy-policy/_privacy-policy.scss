@@ -1,16 +1,13 @@
 .privacy-policy {
 
-  $border: rhythm(.25, $base-font-size);
   @include trailer(1, $base-font-size);
   background-color: $alpha-color;
-  border-right: $border solid $alpha-color;
-  border-left: $border solid $alpha-color;
+}
+
+.privacy-policy--header {
+
+  @include clearfix;
   cursor: pointer;
-
-  &.privacy-policy--expand {
-
-    border-bottom: $border solid $alpha-color;
-  }
 }
 
 .privacy-policy--title {
@@ -42,9 +39,8 @@
   background-color: lighten($alpha-color, 20);
   color: #ffffff;
   overflow: hidden;
-  //  @include single-transition(max-height, 1s);
+  @include single-transition(max-height, 1s);
   @include text-shadow(1px 1px 0 0 darken($alpha-color, 10));
-  @include box-shadow(2px 2px 4px 0 lighten($alpha-color, 10) inset, 1px 1px 0 0 lighten($alpha-color,30));
 
   .privacy-policy--expand & {
 
@@ -55,10 +51,15 @@
 
 .privacy-policy__list {
 
+  $border: rhythm(.25, $base-font-size);
   margin: 0;
   padding-top: rhythm(1, $base-font-size);
   padding-right: rhythm(1, $base-font-size);
   padding-left: rhythm(1, $base-font-size);
+  border-right: $border solid $alpha-color;
+  border-bottom: $border solid $alpha-color;
+  border-left: $border solid $alpha-color;
+  @include box-shadow(2px 2px 4px 0 lighten($alpha-color, 10) inset, -1px -1px 0 0 lighten($alpha-color,30) inset);
   @include no-bullets;
 }
 
