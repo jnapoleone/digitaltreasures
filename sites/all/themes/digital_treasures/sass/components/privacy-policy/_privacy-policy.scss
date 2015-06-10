@@ -1,34 +1,77 @@
 .privacy-policy {
 
-  //  padding: rhythm(1,$lg-base-font-size);
-  background-color: lighten($alpha-color, 20);
-  border-right: rhythm(.25, $lg-base-font-size) solid $alpha-color;
-  border-bottom: rhythm(.25, $lg-base-font-size) solid $alpha-color;
-  border-left: rhythm(.25, $lg-base-font-size) solid $alpha-color;
-  @include box-shadow(2px 38px 1px 1px lighten($alpha-color, 15) inset);
+  $border: rhythm(.25, $base-font-size);
+  @include trailer(1, $base-font-size);
+  background-color: $alpha-color;
+  border-right: $border solid $alpha-color;
+  border-left: $border solid $alpha-color;
+  cursor: pointer;
+
+  &.privacy-policy--expand {
+
+    border-bottom: $border solid $alpha-color;
+  }
+}
+
+.privacy-policy--title {
+
+  float: left;
+  padding-left: rhythm(.75, $base-font-size);
+  @include adjust-font-size-to($lg-medium-font-size, 1.5);
+  font-family: Cinzel;
   color: #ffffff;
 }
 
-.privacy-policy__title {
+.privacy-policy--toggle {
 
-  @include trailer(.5, $lg-base-font-size);
-  padding-left: rhythm(.5, $lg-base-font-size);
-  background-color: $alpha-color;
-  font-family: Cinzel;
-  @include adjust-font-size-to($lg-medium-font-size, 1.5);
-  font-weight: bold;
-  letter-spacing: .15em;
-  letter-spacing: .15rem;
+  float: right;
+  padding-right: rhythm(.75, $base-font-size);
+  @include adjust-leading-to(1.5);
+  color: #ffffff;
+
+  .material-icons {
+
+    vertical-align: middle;
+  }
 }
 
-.privacy-policy__definition {
-  @include trailer(.5, $lg-base-font-size);
-  margin-left: 0;
-  padding-right: rhythm(.5, $lg-base-font-size);
-  padding-left: rhythm(.5, $lg-base-font-size);
-  @include single-text-shadow(1px,1px,0,0,lighten($alpha-color, 10));
+.privacy-policy--content {
+
+  max-height: 0;
+  clear: both;
+  background-color: lighten($alpha-color, 20);
+  color: #ffffff;
+  overflow: hidden;
+  //  @include single-transition(max-height, 1s);
+  @include text-shadow(1px 1px 0 0 darken($alpha-color, 10));
+  @include box-shadow(2px 2px 4px 0 lighten($alpha-color, 10) inset, 1px 1px 0 0 lighten($alpha-color,30));
+
+  .privacy-policy--expand & {
+
+    max-height: 999px;
+  }
 }
 
-a.privacy-policy__button {
-  @extend .btn-pink;
+
+.privacy-policy__list {
+
+  margin: 0;
+  padding-top: rhythm(1, $base-font-size);
+  padding-right: rhythm(1, $base-font-size);
+  padding-left: rhythm(1, $base-font-size);
+  @include no-bullets;
+}
+
+.privacy-policy__button {
+
+  @extend .form-submit;
+}
+
+
+a:link.privacy-policy__button,
+a:visited.privacy-policy__button,
+a:hover.privacy-policy__button,
+a:active.privacy-policy__button {
+
+  color: #ffffff;
 }

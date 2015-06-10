@@ -1,28 +1,63 @@
 .service-guarantee {
 
-  background-color: lighten($beta-color, 20);
-  border-right: rhythm(.25, $lg-base-font-size) solid $beta-color;
-  border-bottom: rhythm(.25, $lg-base-font-size) solid $beta-color;
-  border-left: rhythm(.25, $lg-base-font-size) solid $beta-color;
-  @include box-shadow(2px 38px 4px 1px lighten($beta-color, 15) inset);
+  $border: rhythm(.25, $base-font-size);
+  @include trailer(1, $base-font-size);
+  background-color: $beta-color;
+  border-right: $border solid $beta-color;
+  border-left: $border solid $beta-color;
+  cursor: pointer;
+
+  &.service-guarantee--expand {
+
+    border-bottom: $border solid $beta-color;
+  }
+}
+
+.service-guarantee--title {
+
+  float: left;
+  padding-left: rhythm(.75, $base-font-size);
+  @include adjust-font-size-to($lg-medium-font-size, 1.5);
+  font-family: Cinzel;
   color: #ffffff;
 }
 
-.service-guarantee__title {
+.service-guarantee--toggle {
 
-  @include trailer(.5, $lg-base-font-size);
-  padding-left: rhythm(.5, $lg-base-font-size);
-  background-color: $beta-color;
-  font-family: Cinzel;
-  @include adjust-font-size-to($lg-medium-font-size, 1.5);
-  font-weight: bold;
-  letter-spacing: .15em;
-  letter-spacing: .15rem;
+  float: right;
+  padding-right: rhythm(.75, $base-font-size);
+  @include adjust-leading-to(1.5);
+  color: #ffffff;
+
+  .material-icons {
+
+    vertical-align: middle;
+  }
 }
 
-.service-guarantee__definition {
-  @include trailer(.5, $lg-base-font-size);
-  padding-right: rhythm(.5, $lg-base-font-size);
-  padding-left: rhythm(.5, $lg-base-font-size);
-  @include single-text-shadow(1px,1px,0,0,lighten($beta-color, 10));
+.service-guarantee--content {
+
+  max-height: 0;
+  clear: both;
+  background-color: lighten($beta-color, 20);
+  color: #ffffff;
+  overflow: hidden;
+//  @include single-transition(max-height, 1s);
+  @include text-shadow(1px 1px 0 0 darken($beta-color, 10));
+  @include box-shadow(2px 2px 4px 0 lighten($beta-color, 10) inset, 1px 1px 0 0 lighten($beta-color,30));
+
+  .service-guarantee--expand & {
+
+    max-height: 999px;
+  }
+}
+
+
+.service-guarantee__list {
+
+  margin: 0;
+  padding-top: rhythm(1, $base-font-size);
+  padding-right: rhythm(1, $base-font-size);
+  padding-left: rhythm(1, $base-font-size);
+  @include no-bullets;
 }

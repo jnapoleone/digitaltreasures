@@ -1,7 +1,9 @@
 .l-sidebar-second {
 
 	position: absolute;
-	top:0;right: - bp-sidebar-second-width();
+	top:0;
+    right: - bp-sidebar-second-width();
+    width: bp-sidebar-second-width();
 
 	@include layout-at( ( 'grid': 12 ), $bp-12-grid ) {
 		position: relative;

@@ -148,19 +148,46 @@
     }
   };
 
-})(jQuery);
 
-Drupal.behaviors.digitalTreasuresAnchorScroll = {
-    attach: function (context, settings) {
-        var height = 0;
-        window.onload  = function() {
+    Drupal.behaviors.digitalTreasuresAnchorScroll = {
+        attach: function (context, settings) {
+            var height = 0;
+            window.onload  = function() {
 
-            var anchor = (window.location.hash) ? window.location.hash : false;
+                var anchor = (window.location.hash) ? window.location.hash : false;
 
-            if(anchor) {
-                height = document.getElementById('undefined-sticky-wrapper').offsetHeight;
-                window.scrollBy(0,-height);
+                if(anchor) {
+                    height = document.getElementById('undefined-sticky-wrapper').offsetHeight;
+                    window.scrollBy(0,-height);
+
+                    $('.privacy-policy').addClass('privacy-policy--expand');
+                }
             }
         }
-    }
-};
+    };
+
+    Drupal.behaviors.digitalTreasuresToggleMessage = {
+        attach: function (context, settings) {
+
+            $('.service-guarantee').on('click', function () {
+                if($('.service-guarantee').hasClass('service-guarantee--expand')) {
+
+                    $('.service-guarantee').removeClass('service-guarantee--expand');
+                } else {
+
+                    $('.service-guarantee').addClass('service-guarantee--expand');
+                }
+            });
+
+            $('.privacy-policy').on('click', function () {
+                if($('.privacy-policy').hasClass('privacy-policy--expand')) {
+
+                    $('.privacy-policy').removeClass('privacy-policy--expand');
+                } else {
+
+                    $('.privacy-policy').addClass('privacy-policy--expand');
+                }
+            });
+        }
+    };
+})(jQuery);
