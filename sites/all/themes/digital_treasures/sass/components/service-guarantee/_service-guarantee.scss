@@ -39,7 +39,7 @@
   background-color: lighten($beta-color, 20);
   color: #ffffff;
   overflow: hidden;
-  @include single-transition(max-height, 1s);
+  @include single-transition(max-height, .5s);
   @include text-shadow(1px 1px 0 0 darken($beta-color, 10));
 
   .service-guarantee--expand & {

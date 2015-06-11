@@ -1908,17 +1908,22 @@ ul.inline li {
   background-color: #e0749b;
   color: #ffffff;
   overflow: hidden;
-  -moz-transition: max-height 1s;
-  -o-transition: max-height 1s;
-  -webkit-transition: max-height 1s;
-  transition: max-height 1s;
+  -moz-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.5s;
   text-shadow: 1px 1px 0 #99224d;
   text-shadow: 1px 1px 0 0 #99224d; }
-  /* line 45, ../sass/components/privacy-policy/_privacy-policy.scss */
-  .privacy-policy--expand .privacy-policy--content {
-    max-height: 342px; }
 
-/* line 52, ../sass/components/privacy-policy/_privacy-policy.scss */
+/* line 50, ../sass/components/privacy-policy/_privacy-policy.scss */
+.privacy-policy--full.privacy-policy--expand .privacy-policy--content {
+  max-height: 342px; }
+
+/* line 61, ../sass/components/privacy-policy/_privacy-policy.scss */
+.privacy-policy--2col.privacy-policy--expand .privacy-policy--content {
+  max-height: 390px; }
+
+/* line 69, ../sass/components/privacy-policy/_privacy-policy.scss */
 .privacy-policy__list {
   margin: 0;
   padding-top: 1.5em;
@@ -1937,7 +1942,7 @@ ul.inline li {
     list-style-type: none;
     margin-left: 0; }
 
-/* line 72, ../sass/components/privacy-policy/_privacy-policy.scss */
+/* line 89, ../sass/components/privacy-policy/_privacy-policy.scss */
 a:link.privacy-policy__button,
 a:visited.privacy-policy__button,
 a:hover.privacy-policy__button,
@@ -1981,10 +1986,10 @@ a:active.privacy-policy__button {
   background-color: #798acd;
   color: #ffffff;
   overflow: hidden;
-  -moz-transition: max-height 1s;
-  -o-transition: max-height 1s;
-  -webkit-transition: max-height 1s;
-  transition: max-height 1s;
+  -moz-transition: max-height 0.5s;
+  -o-transition: max-height 0.5s;
+  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.5s;
   text-shadow: 1px 1px 0 #2f3f7e;
   text-shadow: 1px 1px 0 0 #2f3f7e; }
   /* line 45, ../sass/components/service-guarantee/_service-guarantee.scss */
