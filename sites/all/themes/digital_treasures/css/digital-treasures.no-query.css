@@ -1990,9 +1990,9 @@ a:active.privacy-policy__button {
   text-shadow: 1px 1px 0 0 #2f3f7e; }
   /* line 45, ../sass/components/service-guarantee/_service-guarantee.scss */
   .service-guarantee--expand .service-guarantee--content {
-    max-height: 150px; }
+    max-height: 358px; }
 
-/* line 52, ../sass/components/service-guarantee/_service-guarantee.scss */
+/* line 62, ../sass/components/service-guarantee/_service-guarantee.scss */
 .service-guarantee__list {
   margin: 0;
   padding-top: 1.5em;

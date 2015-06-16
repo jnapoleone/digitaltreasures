@@ -44,7 +44,17 @@
 
   .service-guarantee--expand & {
 
-    max-height: 150px;
+    max-height: 358px;
+
+    @include breakpoint($bp-6-grid) {
+
+      max-height: 218px;
+    }
+
+    @include breakpoint($bp-12-grid) {
+
+      max-height: 150px;
+    }
   }
 }
 
