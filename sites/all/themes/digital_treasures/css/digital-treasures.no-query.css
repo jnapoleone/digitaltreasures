@@ -1722,6 +1722,7 @@ ul.inline li {
 .panel-1row-2col {
   overflow: hidden;
   *zoom: 1;
+  overflow: visible;
   width: 93.75%;
   float: right;
   margin-left: 0;
@@ -1914,16 +1915,11 @@ ul.inline li {
   transition: max-height 0.5s;
   text-shadow: 1px 1px 0 #99224d;
   text-shadow: 1px 1px 0 0 #99224d; }
+  /* line 45, ../sass/components/privacy-policy/_privacy-policy.scss */
+  .privacy-policy--expand .privacy-policy--content {
+    max-height: 786px; }
 
-/* line 50, ../sass/components/privacy-policy/_privacy-policy.scss */
-.privacy-policy--full.privacy-policy--expand .privacy-policy--content {
-  max-height: 342px; }
-
-/* line 61, ../sass/components/privacy-policy/_privacy-policy.scss */
-.privacy-policy--2col.privacy-policy--expand .privacy-policy--content {
-  max-height: 390px; }
-
-/* line 69, ../sass/components/privacy-policy/_privacy-policy.scss */
+/* line 87, ../sass/components/privacy-policy/_privacy-policy.scss */
 .privacy-policy__list {
   margin: 0;
   padding-top: 1.5em;
@@ -1942,7 +1938,7 @@ ul.inline li {
     list-style-type: none;
     margin-left: 0; }
 
-/* line 89, ../sass/components/privacy-policy/_privacy-policy.scss */
+/* line 107, ../sass/components/privacy-policy/_privacy-policy.scss */
 a:link.privacy-policy__button,
 a:visited.privacy-policy__button,
 a:hover.privacy-policy__button,
@@ -1951,7 +1947,7 @@ a:active.privacy-policy__button {
 
 /* line 1, ../sass/components/service-guarantee/_service-guarantee.scss */
 .service-guarantee {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.75em;
   background-color: #3d51a3; }
 
 /* line 7, ../sass/components/service-guarantee/_service-guarantee.scss */
