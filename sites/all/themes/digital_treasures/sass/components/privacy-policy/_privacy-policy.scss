@@ -41,6 +41,17 @@
   overflow: hidden;
   @include single-transition(max-height, .5s);
   @include text-shadow(1px 1px 0 0 darken($alpha-color, 10));
+
+  .privacy-policy--expand & {
+
+    max-height: 786px;
+
+    @include breakpoint($bp-6-grid) {
+
+      max-height: 590px;
+    }
+  }
+
 }
 
 .privacy-policy--full {
@@ -49,10 +60,13 @@
 
     .privacy-policy--content {
 
-      max-height: 342px;
+      @include breakpoint($bp-12-grid) {
+
+        max-height: 342px;
+      }
     }
-   }
- }
+  }
+}
 
 .privacy-policy--2col {
 
@@ -60,7 +74,11 @@
 
     .privacy-policy--content {
 
-      max-height: 390px;
+
+      @include breakpoint( $bp-12-grid) {
+
+        max-height: 390px;
+      }
     }
   }
 }
