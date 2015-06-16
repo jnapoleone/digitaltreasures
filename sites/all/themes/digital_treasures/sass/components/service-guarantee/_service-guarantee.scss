@@ -1,6 +1,6 @@
 .service-guarantee {
 
-  @include trailer(1, $base-font-size);
+  @include trailer(.5, $base-font-size);
   background-color: $beta-color;
 }
 
