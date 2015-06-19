@@ -32,6 +32,24 @@
 	}
 }
 
+.contact-emails {
+
+  border: none;
+
+  td {
+
+    padding: rhythm(.15);
+    border:none;
+    border-collapse: collapse;
+  }
+
+  .contact-emails--name,
+  .contact-emails--position,
+  .contact-emails--email {
+    text-align: center;
+  }
+}
+
 .locations__list {
 
 	@include no-bullets;
