@@ -2562,12 +2562,26 @@ ul.inline li {
     border: none;
     border-collapse: collapse; }
   /* line 46, ../sass/components/node/_contact-us.scss */
-  .contact-emails .contact-emails--name,
-  .contact-emails .contact-emails--position,
+  .contact-emails .contact-emails--position {
+    display: none; }
+    @media screen and (min-width: 31.25em) {
+      /* line 46, ../sass/components/node/_contact-us.scss */
+      .contact-emails .contact-emails--position {
+        display: table-cell; } }
+  /* line 56, ../sass/components/node/_contact-us.scss */
+  .contact-emails .contact-emails--name {
+    text-align: right; }
+  /* line 61, ../sass/components/node/_contact-us.scss */
   .contact-emails .contact-emails--email {
-    text-align: center; }
+    text-align: left; }
+  @media screen and (min-width: 31.25em) {
+    /* line 66, ../sass/components/node/_contact-us.scss */
+    .contact-emails .contact-emails--name,
+    .contact-emails .contact-emails--position,
+    .contact-emails .contact-emails--email {
+      text-align: center; } }
 
-/* line 53, ../sass/components/node/_contact-us.scss */
+/* line 77, ../sass/components/node/_contact-us.scss */
 .locations__list {
   list-style: none;
   padding-left: 0; }
@@ -2576,14 +2590,14 @@ ul.inline li {
     list-style-image: none;
     list-style-type: none;
     margin-left: 0; }
-  /* line 58, ../sass/components/node/_contact-us.scss */
+  /* line 82, ../sass/components/node/_contact-us.scss */
   .locations__list .locations__list-title {
     color: #3d51a3; }
-  /* line 63, ../sass/components/node/_contact-us.scss */
+  /* line 87, ../sass/components/node/_contact-us.scss */
   .locations__list a {
     color: #c32b62; }
   @media screen and (min-width: 64em) {
-    /* line 53, ../sass/components/node/_contact-us.scss */
+    /* line 77, ../sass/components/node/_contact-us.scss */
     .locations__list {
       display: none; } }
 
@@ -2603,14 +2617,14 @@ ul.inline li {
   100% {
     color: #333333; } }
 @media screen and (min-width: 64em) {
-  /* line 91, ../sass/components/node/_contact-us.scss */
+  /* line 115, ../sass/components/node/_contact-us.scss */
   #etobicoke--map:target {
     -moz-animation: highlight 1s linear;
     -webkit-animation: highlight 1s linear;
     animation: highlight 1s linear; } }
 
 @media screen and (min-width: 64em) {
-  /* line 104, ../sass/components/node/_contact-us.scss */
+  /* line 128, ../sass/components/node/_contact-us.scss */
   #north-york--map:target {
     -moz-animation: highlight 1s linear;
     -webkit-animation: highlight 1s linear;

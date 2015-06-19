@@ -43,10 +43,34 @@
     border-collapse: collapse;
   }
 
+  .contact-emails--position {
+
+    display: none;
+
+    @include breakpoint($bp-6-grid) {
+
+      display: table-cell;
+    }
+  }
+
+  .contact-emails--name {
+
+    text-align: right;
+  }
+
+  .contact-emails--email {
+
+    text-align: left;
+  }
+
   .contact-emails--name,
   .contact-emails--position,
   .contact-emails--email {
-    text-align: center;
+
+    @include breakpoint($bp-6-grid) {
+
+      text-align: center;
+    }
   }
 }
 
