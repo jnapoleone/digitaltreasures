@@ -1,3 +1,6 @@
+.ancestry {
+  @include trailer(1);
+}
 .ancestry--cta {
 
   @include leader(2, $lg-base-font-size);
