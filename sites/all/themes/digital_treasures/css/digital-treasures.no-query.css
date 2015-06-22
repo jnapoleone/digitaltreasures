@@ -1787,25 +1787,28 @@ ul.inline li {
   font-size: 1.0625em;
   line-height: 1.41176em; }
 /* line 59, ../sass/components/panels/panes/_social-networking-badges.scss */
+.l-region--branding .pane--social-networking-badges .tel__separator {
+  display: none; }
+/* line 70, ../sass/components/panels/panes/_social-networking-badges.scss */
 .l-region--header .pane--social-networking-badges .tel__separator {
   display: none; }
-/* line 73, ../sass/components/panels/panes/_social-networking-badges.scss */
+/* line 83, ../sass/components/panels/panes/_social-networking-badges.scss */
 .l-region--header .pane--social-networking-badges .toll-free-tel__link {
   display: none; }
-/* line 84, ../sass/components/panels/panes/_social-networking-badges.scss */
+/* line 94, ../sass/components/panels/panes/_social-networking-badges.scss */
 .pane--social-networking-badges .tel {
   color: #c32b62;
   text-align: center; }
-  /* line 89, ../sass/components/panels/panes/_social-networking-badges.scss */
+  /* line 99, ../sass/components/panels/panes/_social-networking-badges.scss */
   .l-region--branding .pane--social-networking-badges .tel {
     margin-bottom: 0.375em; }
-  /* line 94, ../sass/components/panels/panes/_social-networking-badges.scss */
+  /* line 104, ../sass/components/panels/panes/_social-networking-badges.scss */
   .l-region--header .pane--social-networking-badges .tel {
     float: left;
     margin-bottom: 0;
     padding-left: 0.42857em; }
 
-/* line 107, ../sass/components/panels/panes/_social-networking-badges.scss */
+/* line 117, ../sass/components/panels/panes/_social-networking-badges.scss */
 .l-region--header .social-networking-badges--block {
   overflow: hidden;
   *zoom: 1;
@@ -1818,7 +1821,7 @@ ul.inline li {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-/* line 118, ../sass/components/panels/panes/_social-networking-badges.scss */
+/* line 128, ../sass/components/panels/panes/_social-networking-badges.scss */
 .social-networking-badges {
   list-style: none;
   margin: 0;
@@ -1845,42 +1848,42 @@ ul.inline li {
     white-space: nowrap;
     padding-left: 0;
     padding-right: 0; }
-  /* line 124, ../sass/components/panels/panes/_social-networking-badges.scss */
+  /* line 134, ../sass/components/panels/panes/_social-networking-badges.scss */
   .social-networking-badges li {
     position: relative;
     width: 32px;
     height: 32px;
     margin-left: 0.3em;
     margin-right: 0.3em; }
-    /* line 132, ../sass/components/panels/panes/_social-networking-badges.scss */
+    /* line 142, ../sass/components/panels/panes/_social-networking-badges.scss */
     .social-networking-badges li:first-of-type {
       margin-left: 0; }
-    /* line 137, ../sass/components/panels/panes/_social-networking-badges.scss */
+    /* line 147, ../sass/components/panels/panes/_social-networking-badges.scss */
     .social-networking-badges li:last-of-type {
       margin-right: 0; }
-  /* line 143, ../sass/components/panels/panes/_social-networking-badges.scss */
+  /* line 153, ../sass/components/panels/panes/_social-networking-badges.scss */
   .l-region--header .social-networking-badges {
     float: left; }
 
-/* line 149, ../sass/components/panels/panes/_social-networking-badges.scss */
+/* line 159, ../sass/components/panels/panes/_social-networking-badges.scss */
 .social-networking-badges__link {
   display: block;
   width: 32px;
   height: 32px; }
 
-/* line 158, ../sass/components/panels/panes/_social-networking-badges.scss */
+/* line 168, ../sass/components/panels/panes/_social-networking-badges.scss */
 .l-region--header .social-networking-badges__link img {
   display: block; }
 
-/* line 164, ../sass/components/panels/panes/_social-networking-badges.scss */
+/* line 174, ../sass/components/panels/panes/_social-networking-badges.scss */
 .interface-images-facebook {
   background: url('../../../../default/files/images/generated/interface-images-s8386cc5a51.png') 0 32.20271% no-repeat; }
 
-/* line 169, ../sass/components/panels/panes/_social-networking-badges.scss */
+/* line 179, ../sass/components/panels/panes/_social-networking-badges.scss */
 .interface-images-twitter {
   background: url('../../../../default/files/images/generated/interface-images-s8386cc5a51.png') 0 79.56903% no-repeat; }
 
-/* line 174, ../sass/components/panels/panes/_social-networking-badges.scss */
+/* line 184, ../sass/components/panels/panes/_social-networking-badges.scss */
 .interface-images-pinterest {
   background: url('../../../../default/files/images/generated/interface-images-s8386cc5a51.png') 0 63.84677% no-repeat; }
 
