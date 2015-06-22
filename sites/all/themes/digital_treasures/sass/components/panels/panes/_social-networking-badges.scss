@@ -36,6 +36,15 @@
 		@extend %tel-link;
 	}
 
+  a.tel__link {
+    @include adjust-font-size-to($sm-medium-font-size);
+
+    @include breakpoint($bp-12-grid) {
+
+      @include adjust-font-size-to($lg-medium-font-size);
+    }
+  }
+
 	.toll-free-tel__link,
 	.toll-free-tel__link:link,
 	.toll-free-tel__link:visited,
@@ -47,15 +56,26 @@
 
 	.tel__separator {
 
-		.l-region--header & {
+      .l-region--branding & {
 
-			display: none;
+        display:none;
 
-			@include breakpoint( $bp-social-networking-grid ) {
+        @include breakpoint($bp-social-networking-grid) {
 
-				display: inline-block;
-			}
-		}
+          display: block;
+          text-align: center;
+        }
+      }
+
+      .l-region--header & {
+
+        display: none;
+
+        @include breakpoint( $bp-social-networking-grid ) {
+
+            display: inline-block;
+        }
+      }
 	}
 
 	.toll-free-tel__link {
