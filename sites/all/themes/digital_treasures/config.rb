@@ -6,6 +6,8 @@
 ## file for more information.
 ##
 
+Encoding.default_external = "utf-8"
+
 # Default to development if environment is not set.
 saved = environment
 if (environment.nil?)
