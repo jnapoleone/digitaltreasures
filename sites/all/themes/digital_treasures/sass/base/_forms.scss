@@ -26,40 +26,46 @@ input[type="week"] {
 .field--source,
 .article--readmore {
 
-	padding: 0.357em 1.071em;
-	background: $beta-color;
-	@include background-image( linear-gradient(lighten( $beta-color, 10 ),$beta-color));
-	border-radius: 20px;
-	border: 1px solid $beta-color;
-	border-bottom: 1px solid lighten( $beta-color, 10 );
-	border-right-color: darken( $beta-color, 10 );
-	border-left-color: darken( $beta-color, 10 );
-	color: #ffffff;
-	@include text-shadow( 1px 1px 0 darken( $beta-color, 10 ) );
-	outline: none;
+  display: inline-block;
+  @include trailer( 1, $sm-base-font-size );
+  padding: 0.357em 1.071em;
+  background: $beta-color;
+  @include background-image( linear-gradient(lighten( $beta-color, 10 ),$beta-color));
+  border-radius: 20px;
+  border: 1px solid $beta-color;
+  border-bottom: 1px solid lighten( $beta-color, 10 );
+  border-right-color: darken( $beta-color, 10 );
+  border-left-color: darken( $beta-color, 10 );
+  color: #ffffff;
+  @include text-shadow( 1px 1px 0 darken( $beta-color, 10 ) );
+  outline: none;
+  @include breakpoint( $bp-12-grid ) {
 
-	a:link,
-	a:visited,
-	a:hover,
-	a:active {
+  @include trailer( 1, $lg-base-font-size );
+}
 
-		color: #ffffff;
-	}
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
 
-	&:hover {
-		@include background-image( linear-gradient( $beta-color, lighten( $beta-color, 10 ) ) );
-	}
+      color: #ffffff;
+  }
 
-	&:active {
-		background: lighten( $beta-color, 20 );
-		border-color: lighten( $beta-color, 10 )  ;
-	}
+  &:hover {
+      @include background-image( linear-gradient( $beta-color, lighten( $beta-color, 10 ) ) );
+  }
 
-	&:disabled {
-		background:#8A9EF0;
-		border-color: #7084D6;
-		color: lighten( #ffffff, 75 );
-	}
+  &:active {
+      background: lighten( $beta-color, 20 );
+      border-color: lighten( $beta-color, 10 )  ;
+  }
+
+  &:disabled {
+      background:#8A9EF0;
+      border-color: #7084D6;
+      color: lighten( #ffffff, 75 );
+  }
 }
 
 .node-readmore {
