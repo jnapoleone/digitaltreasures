@@ -2,11 +2,9 @@
 .views-row {
 
 	@include trailer( 1, $sm-base-font-size );
-//	@include padding-trailer( 1, $sm-base-font-size );
 
 	@include breakpoint( $bp-12-grid ) {
 
 		@include trailer( 1, $lg-base-font-size );
-//		@include padding-trailer( 1, $lg-base-font-size );
 	}
 }

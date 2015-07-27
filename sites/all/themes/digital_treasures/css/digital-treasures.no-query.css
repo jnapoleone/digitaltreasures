@@ -2058,6 +2058,9 @@ a:active.privacy-policy__button {
     float: right;
     margin-left: 0;
     margin-right: 3.125%; }
+  /* line 24, ../sass/components/views/_blog.scss */
+  .view--blog .views-row-last {
+    border: none; }
 
 /* line 2, ../sass/components/views/_pager-load-more.scss */
 .pager-load-more {

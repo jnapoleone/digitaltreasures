@@ -3205,6 +3205,9 @@ a:active.privacy-policy__button {
         max-width: 1120px;
         margin-right: auto;
         margin-left: auto; } }
+  /* line 24, ../sass/components/views/_blog.scss */
+  .view--blog .views-row-last {
+    border: none; }
 
 /* line 2, ../sass/components/views/_pager-load-more.scss */
 .pager-load-more {
