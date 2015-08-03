@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Digital Treasures Blog feature.
+ */
+
+include_once 'digital_treasures_blog.features.inc';
