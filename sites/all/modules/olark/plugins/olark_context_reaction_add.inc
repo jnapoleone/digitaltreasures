@@ -1,9 +1,7 @@
 <?php
-// $Id:
-
 /**
  * @file
- *   Adds a Context module reaction for the Olark module.
+ * Adds a Context module reaction for the Olark module.
  */
 
 /**
