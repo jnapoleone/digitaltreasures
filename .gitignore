@@ -4,3 +4,19 @@ sites/*/settings*.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+# Ignore cached files
+/cache
+
+# Ignore Bluehost backed up .htaccess files
+/.htaccess.bak*
+
+# Ignore digitaltreasury.ca
+/digitaltreasury.ca
+
+# Ignore BlueHost error_log
+/error_log
+
+# Ignore Hosting php.ini
+/php.ini
+/php.ini*
