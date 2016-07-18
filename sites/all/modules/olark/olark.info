@@ -4,9 +4,9 @@ core = 7.x
 package = Olark
 configure = admin/config/services/olark
 
-; Information added by Drupal.org packaging script on 2015-11-21
-version = "7.x-1.0-rc1"
+; Information added by Drupal.org packaging script on 2016-07-14
+version = "7.x-1.0-rc2"
 core = "7.x"
 project = "olark"
-datestamp = "1448073852"
+datestamp = "1468536845"
 

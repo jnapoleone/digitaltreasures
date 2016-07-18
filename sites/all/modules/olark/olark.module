@@ -36,7 +36,7 @@ function olark_page_alter(&$page) {
   }
 
   // If the context plugin exists and the result is false return early.
-  if (module_exists('context')) {
+  if (variable_get('olark_context', 0) && module_exists('context')) {
     $plugin = context_get_plugin('reaction', 'olark_add');
     if ($plugin && !$plugin->execute()) {
       return;
