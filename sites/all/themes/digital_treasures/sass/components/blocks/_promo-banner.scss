@@ -6,7 +6,7 @@
 	@include breakpoint( $bp-12-grid ) {
 
 		@include trailer( 1, $lg-base-font-size );
-		max-width: bp-min-width-res();
+		max-width: 100%;
 		margin-top: 0;
 		margin-right: auto;
 		margin-left: auto;
@@ -22,7 +22,7 @@
 .promo-banner {
 
 	$gutter-width: gutter-span();
-	$margin: $gutter-width/2;
+	$margin: $gutter-width;
 	display: block;
 	position: relative;
 	padding: 1em 2em; /* Adjust to suit */
@@ -48,8 +48,8 @@
 		$column-width: column-span( 1, 1, 12, 1/3 );
 		$gutter-width: gutter-span(1/3,12);
 		$margin: $column-width + ($gutter-width/2);
-		margin-right: - $margin;
-		margin-left: - $margin;
+		margin-right: - gutter-span();
+		margin-left: - gutter-span();
 	}
 
 	&:before, &:after {
