@@ -1,7 +1,9 @@
+$gutter-width-half: gutter-span()/2;
 .dt-leads__form {
 
 	@include trailer( 1, $sm-base-font-size );
-	padding: 1.5em;
+//	padding: 1.5em;
+    padding: $gutter-width-half 0 0 $gutter-width-half;
 	background: rgba(195,43,98,0.25);
 	border: 6px solid #F65E95;
 
@@ -32,8 +34,9 @@
 
 	@include breakpoint( $bp-dt-leads-input-float-grid ) {
 
-		padding-right: .75em;
-		padding-left: .357em;
+//		padding-right: .75em;
+//		padding-left: .357em;
+      padding: 0 $gutter-width-half $gutter-width-half 0;
 	}
 }
 
@@ -42,8 +45,9 @@
 
 	@include breakpoint( $bp-dt-leads-input-float-grid ) {
 
-		padding-right: .357em;
-		padding-left: .75em;
+//		padding-right: .357em;
+//		padding-left: .75em;
+      padding: 0 $gutter-width-half $gutter-width-half 0;
 	}
 }
 
@@ -52,10 +56,15 @@
 
 	@include breakpoint( $bp-dt-leads-input-float-grid ) {
 
-		padding-right: .357em;
-		padding-left: .357em;
-		clear: left;
+//		padding-right: .357em;
+//		padding-left: .357em;
+      padding: 0 $gutter-width-half $gutter-width-half 0;
+      clear: left;
 	}
+}
+
+.dt-leads__item--submit {
+  margin-bottom: 0;
 }
 
 .dt-leads__item--required {
@@ -92,7 +101,7 @@
 .dt-leads__textarea {
 	width: 100%;
 	max-width: 100%;
-	margin: 0.357em 0 1.5em 0;
+//	margin: 0.357em 0 1.5em 0;
 	padding: 0.75em;
 	border: 1px solid #dddddd;
 	outline: none;
