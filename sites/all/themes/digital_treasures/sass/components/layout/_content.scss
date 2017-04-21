@@ -6,14 +6,22 @@
 
 	@include layout-at( ('grid': 12, 'gutter': .99999, 'gutter style': opposite), $bp-12-grid ) {
 
-		@include grid-span( 6, 1 );
+		@include grid-span( 4, 1 );
 	}
 }
 
 .l-content__column-second {
 
-	@include layout-at( ('grid': 12, 'gutter': .99999, 'gutter style': opposite), $bp-12-grid ) {
+  @include layout-at( ('grid': 12, 'gutter': .99999, 'gutter style': opposite), $bp-12-grid ) {
 
-		@include grid-span( 6, 7 );
-	}
+    @include grid-span( 4, 5 );
+  }
+}
+
+.l-content__column-third {
+
+  @include layout-at( ('grid': 12, 'gutter': .99999, 'gutter style': opposite), $bp-12-grid ) {
+
+    @include grid-span( 4, 9 );
+  }
 }
