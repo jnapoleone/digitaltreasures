@@ -13,18 +13,18 @@
 
       var getMenu = function () {
 
-        if (articlesMenu.length>0) {
+        if (articlesMenu.length > 0) {
 
           return articlesMenu;
 
-        } else if (servicesMenu.length>0) {
+        } else if (servicesMenu.length > 0) {
 
           return servicesMenu;
         }
       };
       var getAsideHeight = function () {
 
-        if (aside.length>0) {
+        if (aside.length  > 0) {
 
           return aside.height();
         }
@@ -32,11 +32,11 @@
 
       var getMenuHeight = function () {
 
-        if (articlesMenu.length>0) {
+        if (articlesMenu.length > 0) {
 
           return articlesMenu.height();
 
-        } else if (servicesMenu.length>0) {
+        } else if (servicesMenu.length > 0) {
 
           return servicesMenu.height();
         }
@@ -44,7 +44,7 @@
 
       var getRegionContentHeight = function () {
 
-        if (regionContent.length>0) {
+        if (regionContent.length > 0) {
 
           return regionContent.innerHeight();
         }
@@ -85,7 +85,7 @@
           var menu = getMenu();
           if (aside.hasClass('aside__overflow-hidden')) {
 
-            aside.css('height','auto');
+            aside.css('height', 'auto');
             aside.removeClass('aside__overflow-hidden');
           }
 
