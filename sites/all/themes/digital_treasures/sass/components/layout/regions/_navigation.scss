@@ -1,14 +1,14 @@
 .l-region--navigation {
 
 	@include breakpoint( $bp-12-grid ) {
-		width: 100%;
-		margin: 0 auto;
+//		width: 100%;
+		margin: 0 gutter-span();
 		background: #ffffff;
 		overflow: hidden;
 	}
 
-	@include breakpoint( bp-min-width-grid() ) {
-
-		max-width: bp-min-width-res();
-	}
+//	@include breakpoint( bp-min-width-grid() ) {
+//
+//		max-width: bp-min-width-res();
+//	}
 }
