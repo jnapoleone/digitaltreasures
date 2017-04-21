@@ -15,7 +15,7 @@
 
     float: none;
     width: auto;
-    max-width: bp-min-width-res();
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0 gutter-span();
   }
 }
