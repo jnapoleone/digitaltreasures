@@ -16,8 +16,8 @@
 	@include breakpoint( $bp-max-width-res ) {
 		$grid-span: column-span( 1, 1 );
 		@include clearfix;
-		max-width: $bp-max-width-res;
-		margin: 0 auto;
+		max-width: 100%;
+		margin: 0 gutter-span();
 		overflow: visible;
 	}
 }
