@@ -111,6 +111,7 @@
 
 #etobicoke--map {
 
+  display: none;
 
 	&:target {
 
@@ -124,6 +125,7 @@
 
 #north-york--map {
 
+  display: none;
 
 	&:target {
 
@@ -133,4 +135,22 @@
 		}
 	}
 
+}
+
+#burlington--map {
+
+  display: none;
+
+  &:target {
+
+    @include breakpoint( $bp-12-grid ) {
+
+      @include animation( highlight 1s linear );
+    }
+  }
+
+}
+
+.location-maps {
+  clear: left;
 }
