@@ -15,7 +15,7 @@
 
     @include breakpoint($bp-12-grid ) {
       float: none;
-      max-width: bp-min-width-res();
+//      max-width: bp-min-width-res();
       margin-right: auto;
       margin-left: auto;
     }
