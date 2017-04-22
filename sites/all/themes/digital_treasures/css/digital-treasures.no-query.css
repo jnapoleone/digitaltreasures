@@ -638,6 +638,10 @@ th.promo {
   overflow: hidden;
 }
 
+.dt-leads__item--submit {
+  margin-bottom: 0;
+}
+
 .dt-leads__item--required {
   color: #C32B62;
 }
@@ -1752,6 +1756,22 @@ ul.inline li {
     color: #333333;
   }
 }
+#etobicoke--map {
+  display: none;
+}
+
+#north-york--map {
+  display: none;
+}
+
+#burlington--map {
+  display: none;
+}
+
+.location-maps {
+  clear: left;
+}
+
 .panel-1row-2col {
   overflow: hidden;
   *zoom: 1;

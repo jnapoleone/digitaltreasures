@@ -911,6 +911,10 @@ th.promo {
   }
 }
 
+.dt-leads__item--submit {
+  margin-bottom: 0;
+}
+
 .dt-leads__item--required {
   color: #C32B62;
 }
@@ -1345,7 +1349,7 @@ th.promo {
 
 @media screen and (min-width: 64em) {
   .l-content__column-first {
-    width: 47.8261%;
+    width: 30.4348%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
@@ -1355,7 +1359,17 @@ th.promo {
 
 @media screen and (min-width: 64em) {
   .l-content__column-second {
-    width: 47.8261%;
+    width: 30.4348%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.7826%;
+    clear: none;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .l-content__column-third {
+    width: 30.4348%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -2761,6 +2775,9 @@ ul.inline li {
     color: #333333;
   }
 }
+#etobicoke--map {
+  display: none;
+}
 @media screen and (min-width: 64em) {
   #etobicoke--map:target {
     -moz-animation: highlight 1s linear;
@@ -2769,12 +2786,30 @@ ul.inline li {
   }
 }
 
+#north-york--map {
+  display: none;
+}
 @media screen and (min-width: 64em) {
   #north-york--map:target {
     -moz-animation: highlight 1s linear;
     -webkit-animation: highlight 1s linear;
     animation: highlight 1s linear;
   }
+}
+
+#burlington--map {
+  display: none;
+}
+@media screen and (min-width: 64em) {
+  #burlington--map:target {
+    -moz-animation: highlight 1s linear;
+    -webkit-animation: highlight 1s linear;
+    animation: highlight 1s linear;
+  }
+}
+
+.location-maps {
+  clear: left;
 }
 
 @media screen and (min-width: 64em) {
@@ -3377,7 +3412,6 @@ a:active.privacy-policy__button {
 @media screen and (min-width: 64em) {
   .view--blog .views-row {
     float: none;
-    max-width: 1120px;
     margin-right: auto;
     margin-left: auto;
   }
