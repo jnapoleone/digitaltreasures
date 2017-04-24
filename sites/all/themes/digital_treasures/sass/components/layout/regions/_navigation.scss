@@ -1,6 +1,6 @@
 .l-region--navigation {
 
-	@include breakpoint( $bp-12-grid ) {
+	@include breakpoint( $bp-max-width-res ) {
 //		width: 100%;
 		margin: 0 gutter-span();
 		background: #ffffff;

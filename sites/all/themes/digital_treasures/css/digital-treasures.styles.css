@@ -1136,6 +1136,10 @@ th.promo {
   text-align: center;
   text-shadow: 1px 1px 2px #99224d;
 }
+.no-columns .promo-banner {
+  margin-left: 0;
+  margin-right: 0;
+}
 @media screen and (min-width: 31.25em) {
   .promo-banner {
     margin-right: -2.08333%;
@@ -1509,7 +1513,7 @@ th.promo {
   overflow: hidden;
 }
 
-@media screen and (min-width: 64em) {
+@media (min-width: 80em) {
   .l-region--navigation {
     margin: 0 2.08333%;
     background: #ffffff;
