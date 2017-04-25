@@ -4,8 +4,8 @@
 	background: #ffffff;
 
 	@include breakpoint( $bp-12-grid ) {
-
+        $margin: gutter-span()/1.9;
 		max-width: 100%;
-		margin: 0 gutter-span();
+		margin: 0 $margin;
 	}
 }
