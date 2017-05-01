@@ -1164,15 +1164,15 @@ th.promo {
 }
 @media screen and (min-width: 80em) {
   .promo-banner:before {
-    left: -2em;
-    border-right-width: 1.5em;
+    left: -1.85em;
+    border-right-width: 1.35em;
     border-left-color: transparent;
   }
 }
 @media screen and (min-width: 80em) {
   .promo-banner:after {
-    right: -2em;
-    border-left-width: 1.5em;
+    right: -1.85em;
+    border-left-width: 1.35em;
     border-right-color: transparent;
   }
 }
@@ -1389,7 +1389,7 @@ th.promo {
 @media screen and (min-width: 64em) {
   .l-footer {
     max-width: 100%;
-    margin: 0 1.09649%;
+    margin: 0 2.08333%;
   }
 }
 
@@ -1400,7 +1400,7 @@ th.promo {
 @media screen and (min-width: 64em) {
   .l-header {
     max-width: 100%;
-    margin: 0 1.09649%;
+    margin: 0 2.08333%;
   }
 }
 
@@ -1418,7 +1418,7 @@ th.promo {
 @media (min-width: 80em) {
   .l-main {
     max-width: 100%;
-    margin: 0 1.09649%;
+    margin: 0 2.08333%;
     overflow: visible;
   }
   .l-main:after {
@@ -2498,6 +2498,21 @@ ul.inline li {
     padding-right: 0.49995em;
   }
 }
+@media screen and (min-width: 64em) {
+  .main--menu .menu .leaf {
+    padding: 0 1.04167%;
+  }
+}
+@media screen and (min-width: 80em) {
+  .main--menu .menu .leaf {
+    padding: 0 2.08333%;
+  }
+}
+@media handheld and (min-width: 64em) and (orientation: landscape) {
+  .main--menu .menu .leaf {
+    padding: 0 0.52083%;
+  }
+}
 .main--menu a {
   position: relative;
   display: block;
@@ -2537,7 +2552,7 @@ ul.inline li {
 }
 @media handheld and (min-width: 64em) and (orientation: landscape) {
   .main--menu a {
-    padding: 1.04167%;
+    padding: 1.04167% 0;
   }
 }
 
