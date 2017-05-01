@@ -15,7 +15,7 @@
 
 	@include breakpoint( $bp-max-width-res ) {
 		$grid-span: column-span( 1, 1 );
-      $margin: gutter-span()/1.9;
+      $margin: gutter-span();
 		@include clearfix;
 		max-width: 100%;
 		margin: 0 $margin;
