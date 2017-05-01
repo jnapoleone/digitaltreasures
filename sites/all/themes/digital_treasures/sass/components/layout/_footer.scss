@@ -6,7 +6,7 @@
 	overflow: hidden;
 
 	@include breakpoint( $bp-12-grid ) {
-        $margin: gutter-span()/1.9;
+        $margin: gutter-span();
 		max-width: 100%;
 		margin: 0 $margin;
 	}
