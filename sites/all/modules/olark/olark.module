@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Integrates Olark Chat in a Drupal site.
@@ -10,6 +11,7 @@
 function olark_menu() {
   $items['admin/config/services/olark'] = array(
     'title' => 'Olark settings',
+    'description' => 'Configure Olark module settings.',
     'page callback' => 'drupal_get_form',
     'page arguments' => array('olark_settings'),
     'access arguments' => array('administer site configuration'),
@@ -84,8 +86,7 @@ function olark_page_alter(&$page) {
 }
 
 /**
- * Checks whether or not current user contains a role which would
- * restrict display of Olark Chat.
+ * Does current user have a role which would restrict display of Olark Chat.
  *
  * @return bool
  *   Whether or not the user is prevented from seeing Olark Chat.
@@ -171,8 +172,8 @@ function olark_settings($form, &$form_state) {
   $form = array();
   $form['olark_code'] = array(
     '#type' => 'textarea',
-    '#title' => t('Olark code'),
-    '#description' => t('Paste the Javascript code block from <a href="http://olark.com/install">Olark.com</a>'),
+    '#title' => t('Olark Code'),
+    '#description' => t('Paste the Javascript code block from <a href="http://olark.com/install">Olark.com</a>. Any customization code from <a href="https://www.olark.com/help/languages">here</a> is accepted.'),
     '#default_value' => variable_get('olark_code', ''),
   );
   $form['olark_ios'] = array(

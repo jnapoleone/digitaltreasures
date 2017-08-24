@@ -33,3 +33,9 @@ Olark Advanced Settings
 To enable Olark on Android phones please ensure the "Enable on Smart Phones"
 option is checked in Olark advanced settings. The advanced settings can be
 accessed at: https://www.olark.com/customize/config?customize_form_pane=advanced
+
+Olark Multilingual Support
+==========================
+You can replace the default Olark chat box text with whatever you like in any
+language, as well as adding localized text for multiple languages using
+provided settings at: https://www.olark.com/help/languages
